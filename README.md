@@ -37,3 +37,28 @@ The course includes links to different learning materials - video courses, tutor
 2. Online courses: finish all tasks, add your reflection about them into README.
 
 3. Videos: same as for the reading; watch the video, answer three questions.
+
+
+# Git and GitHub
+
+1. [Version Control with Git](https://www.udacity.com/course/version-control-with-git--ud123)
+
+During this course:
+
+1. I realized that 'versions' is not only about highly specialized software such as git and version control to varying degree can be found 
+in almost every program. 
+
+2. I worked with versions of a document (called revisions) in google docs.
+
+3. I repeated and clarified the basic concepts of git (working directory, index, repository areas and their workflow).
+
+4. I updated git version and checked config info.
+
+5. I discovered new terminal commands:
+   - `rmdir` to remove directory;
+   - `ls -a` to list hidden files;
+   - `mkdir -p parent/child` to create nested directories with single command.
+   
+6. I created local repository for test directory using `git init` and got acquainted with the contents of the hidden .git folder.
+
+7. Installed and first used next packages for linting - [HTML linter](https://htmlhint.com/), [CSS linter](https://stylelint.io/), [JS linter](https://eslint.org/).
