@@ -43,22 +43,89 @@ The course includes links to different learning materials - video courses, tutor
 
 1. [Version Control with Git](https://www.udacity.com/course/version-control-with-git--ud123)
 
-During this course:
+During this course i:
 
-1. I realized that 'versions' is not only about highly specialized software such as git and version control to varying degree can be found 
+1. Realized that 'versions' is not only about highly specialized software such as git and version control to varying degree can be found 
 in almost every program. 
 
-2. I worked with versions of a document (called revisions) in google docs.
+2. Worked with versions of a document (called revisions) in google docs.
 
-3. I repeated and clarified the basic concepts of git (working directory, index, repository areas and their workflow).
+3. Repeated and clarified the basic concepts of git (working directory, index, repository areas and their workflow). Got acquainted with the contents of the hidden `.git` folder. Learned how to add files into `.gitignore` manually and with using special symbols.
 
-4. I updated git version and checked config info.
+4. Updated git version and checked config info.
 
-5. I discovered new terminal commands:
+5. Discovered new terminal commands:
    - `rmdir` to remove directory;
    - `ls -a` to list hidden files;
    - `mkdir -p parent/child` to create nested directories with single command.
    
-6. I created local repository for test directory using `git init` and got acquainted with the contents of the hidden .git folder.
+6. Repeated and used such git commands as: 
+   - `git init`;
+   - `git clone`;
+   - `git status` (inspecting working tree and stage areas);
+   - `git log` and `git show` (inspecting commits);
+   - `git rm --cached <filename>` (unstaging files);
+   - `git diff` (difference between working directory and last commit). 
 
-7. Installed and first used next packages for linting - [HTML linter](https://htmlhint.com/), [CSS linter](https://stylelint.io/), [JS linter](https://eslint.org/).
+7. Installed and first used next packages for linting - [HTML linter](https://htmlhint.com/), [CSS linter](https://stylelint.io/), [JS linter](https://eslint.org/). While googling discovered command `npm init -y` for generating empty npm project.
+
+8. Worked with git documentation to find neccessary command options.
+
+9. Got acquainted with Less command line pager and it's commands for navigating through the history of commits:
+   - `j` or `↓` scroll :arrow_down: by a line
+   - `d` scroll :arrow_down: by a half-page
+   - `f` scroll :arrow_down: by a page
+   - `k` or `↑` scroll :arrow_up: by a line
+   - `u` scroll :arrow_up: by a half-page
+   - `b` scroll :arrow_up: by a page
+  
+10. Learned commands for commits investigation:
+    - used `git log --oneline`, `git log --stat`, `git log --patch/-p` and `git log --stat -patch` flags to display all commits in certain form;
+    - used `git log --oneline <SHA>`, `git log --stat <SHA>` and `git log -p <SHA>` to display commits from the point where specific commit placed;
+    - used `git show <SHA>`, `git show --stat <SHA>`, `git show --stat --patch <SHA>` to get specific commit.
+
+11. Realized that each commit should make a change to just **ONE** aspect of the project. **Single-unit change** principle.
+    
+    > Work on one change first, commit that, and then change the second one.
+
+    > The best way that I've found to think about what should be in a commit is to think, "What if all changes introduced in this commit were erased?". If a commit were erased, it should only remove one thing.
+
+12. Learned about commit naming:
+    - :white_check_mark: make it *short*;
+    - :white_check_mark: response *what* was done;
+    - :x: don't tell *how* it was done;
+    - :x: don't tell *why* it was done;
+    - :x: don't use *and*.
+
+    > The best way that I've found to come up with a commit message is to finish this phrase, "This commit will...". However, you finish that phrase, use that as your commit message.
+
+13. Learned about entities used for organizing commits structure:
+    | Entity | Description |
+    | --- | --- |
+    | tags  | static commit pointers  |
+    | branches | dynamic commit pointers |
+    | `HEAD` | dynamic branch pointer |
+
+    Practiced in creating and deleting tags/branches and switching between branches. Practiced in linking tags and branches with specific commits. Practiced working with multiple feature branches. 
+    
+    Learned useful commands for work with branches: 
+    - `git checkout -b <new-branch-name>` (create branch and switch to it);
+    - `git checkout -b <new-branch-name> <existing-branch-name>` (create branch pointing on another branch's last commit and switch to it);
+    - `git checkout -b <new-branch-name> <SHA>` (create branch pointing on specific commit and switch to it);
+    - `git log --oneline/--patch/--stat --all --graph` (log commits for all branches using graph);
+
+14. Executed fast-forward and regular merges using `git merge <other-branch>` command. If we merge 2 branches commits will be added to the one which under `HEAD` pointer (current branch). Branch we merge into === current branch.
+
+    > When we merge, we're merging *some other branch* ***into the current (checked-out) branch***. 
+   
+    > :bangbang: We're not merging two branches into a new branch. We're not merging the current branch into the other branch.
+
+    > Fast-forward merge – the branch being 'merged in' must be ahead of the current branch. Current branch's pointer will just be moved forward to point to the same commit as the other branch.
+    
+    > Regular merge - two divergent branches are combined, merge commit is created.
+    
+15. Forced and resolved merge conflict.
+
+    > Git tracks lines in files. A merge conflict will happen when the exact same line(s) are changed in separate branches. 
+   
+Most of all in the course I liked presenting simple analogies to explain complex things.
