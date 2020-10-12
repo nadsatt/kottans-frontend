@@ -47,7 +47,7 @@
 
 1.1. [Version Control with Git course](https://www.udacity.com/courseversion-control-with-git--ud123)
 
-[![Screenchot-image-link](./images/markdown-styling/screenshot-image-link.png)](./images/completion-screenshots/version-control-with-git.png)
+[![Screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./images/completion-screenshots/version-control-with-git.png)
 
 ![alert-image](./images/markdown-styling/alert.png)
 
@@ -143,7 +143,7 @@ During this course i:
 
 1.2 [text placeholder](link)
 
-[![Screenchot-image-link](./images/markdown-styling/screenshot-image-link.png)](./)
+[![Screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./)
 
 - **What was new**
   text placeholder
@@ -162,7 +162,7 @@ During this course i:
 
 2.1 [text placeholder](link)
 
-[![Screenchot-image-link](./images/markdown-styling/screenshot-image-link.png)](./)
+[![Screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./)
 
 - **What was new**
   text placeholder
@@ -175,7 +175,7 @@ During this course i:
 
 2.2 [text placeholder](link)
 
-[![Screenchot-image-link](./images/markdown-styling/screenshot-image-link.png)](./)
+[![Screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./)
 
 - **What was new**
   text placeholder
@@ -194,7 +194,7 @@ During this course i:
 
 3.1 [text placeholder](link)
 
-[![Screenchot-image-link](./images/markdown-styling/screenshot-image-link.png)](./)
+[![Screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./)
 
 - **What was new**
   text placeholder
@@ -207,7 +207,7 @@ During this course i:
 
 3.2 [text placeholder](link)
 
-[![Screenchot-image-link](./images/markdown-styling/screenshot-image-link.png)](./)
+[![Screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./)
 
 - **What was new**
   text placeholder
@@ -232,7 +232,7 @@ During this course i:
 
 4.1 [text placeholder](link)
 
-[![Screenchot-image-link](./images/markdown-styling/screenshot-image-link.png)](./)
+[![Screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./)
 
 - **What was new**
   text placeholder
@@ -245,7 +245,7 @@ During this course i:
 
 4.2 [text placeholder](link)
 
-[![Screenchot-image-link](./images/markdown-styling/screenshot-image-link.png)](./)
+[![Screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./)
 
 - **What was new**
   text placeholder
@@ -262,9 +262,9 @@ During this course i:
 
 ***
 
-4.1 [text placeholder](link)
+5.1 [text placeholder](link)
 
-[![Screenchot-image-link](./images/markdown-styling/screenshot-image-link.png)](./)
+[![Screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./)
 
 - **What was new**
   text placeholder
@@ -275,9 +275,9 @@ During this course i:
 - **General overview**
   text placeholder
 
-4.2 [text placeholder](link)
+5.2 [text placeholder](link)
 
-[![Screenchot-image-link](./images/markdown-styling/screenshot-image-link.png)](./)
+[![Screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./)
 
 - **What was new**
   text placeholder
