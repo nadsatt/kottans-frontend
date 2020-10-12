@@ -1,14 +1,14 @@
-![cat-banner-top](./images/markdown-styling/trybottom.png)
+![cat-banner-top](./images/markdown-styling/cat-banner-top.png)
 
 # kottans-frontend
 
 ## Repository dedicated to participation in [Kottans frontend course](https://github.com/kottans/frontend)
 
-![cat-banner-bottom](./images/markdown-styling/trytop.png)
+![cat-banner-bottom](./images/markdown-styling/cat-banner-bottom.png)
 
 ![box-shadow-top](./images/markdown-styling/box-shadow-top.png)
 
-### My progress :rocket:
+## My progress :rocket:
 
  1. **GENERAL**
     - [ ] [Git and Github](#1-git-and-github)
@@ -47,9 +47,9 @@
 
 1.1. [Version Control with Git course](https://www.udacity.com/courseversion-control-with-git--ud123)
 
-[<span style="color:#81D2C7; font-weight:bold; font-size: 20px">'Version Control with Git' Screenshot</span>](.images/completion-screenshots/version-control-with-git.png)
+[![Screenchot-image-link](./images/markdown-styling/screenshot-image-link.png)](./images/completion-screenshots/version-control-with-git.png)
 
-![alert-image](./images/markdown-styling/try.png)
+![alert-image](./images/markdown-styling/alert.png)
 
 During this course i:
 
@@ -143,7 +143,7 @@ During this course i:
 
 1.2 [text placeholder](link)
 
-[<span style="color:#81D2C7; font-weight:bold; font-size: 20px">'Text placeholder' Screenshot</span>](/)
+[![Screenchot-image-link](./images/markdown-styling/screenshot-image-link.png)](./)
 
 - **What was new**
   text placeholder
@@ -162,7 +162,7 @@ During this course i:
 
 2.1 [text placeholder](link)
 
-[<span style="color:#81D2C7; font-weight:bold; font-size: 20px">'Text placeholder' Screenshot</span>](/)
+[![Screenchot-image-link](./images/markdown-styling/screenshot-image-link.png)](./)
 
 - **What was new**
   text placeholder
@@ -175,7 +175,7 @@ During this course i:
 
 2.2 [text placeholder](link)
 
-[<span style="color:#81D2C7; font-weight:bold; font-size: 20px">'Text placeholder' Screenshot</span>](/)
+[![Screenchot-image-link](./images/markdown-styling/screenshot-image-link.png)](./)
 
 - **What was new**
   text placeholder
@@ -194,7 +194,7 @@ During this course i:
 
 3.1 [text placeholder](link)
 
-[<span style="color:#81D2C7; font-weight:bold; font-size: 20px">'Text placeholder' Screenshot</span>](/)
+[![Screenchot-image-link](./images/markdown-styling/screenshot-image-link.png)](./)
 
 - **What was new**
   text placeholder
@@ -207,7 +207,7 @@ During this course i:
 
 3.2 [text placeholder](link)
 
-[<span style="color:#81D2C7; font-weight:bold; font-size: 20px">'Text placeholder' Screenshot</span>](/)
+[![Screenchot-image-link](./images/markdown-styling/screenshot-image-link.png)](./)
 
 - **What was new**
   text placeholder
@@ -232,7 +232,7 @@ During this course i:
 
 4.1 [text placeholder](link)
 
-[<span style="color:#81D2C7; font-weight:bold; font-size: 20px">'Text placeholder' Screenshot</span>](/)
+[![Screenchot-image-link](./images/markdown-styling/screenshot-image-link.png)](./)
 
 - **What was new**
   text placeholder
@@ -245,7 +245,7 @@ During this course i:
 
 4.2 [text placeholder](link)
 
-[<span style="color:#81D2C7; font-weight:bold; font-size: 20px">'Text placeholder' Screenshot</span>](/)
+[![Screenchot-image-link](./images/markdown-styling/screenshot-image-link.png)](./)
 
 - **What was new**
   text placeholder
@@ -264,7 +264,7 @@ During this course i:
 
 4.1 [text placeholder](link)
 
-[<span style="color:#81D2C7; font-weight:bold; font-size: 20px">'Text placeholder' Screenshot</span>](/)
+[![Screenchot-image-link](./images/markdown-styling/screenshot-image-link.png)](./)
 
 - **What was new**
   text placeholder
@@ -277,7 +277,7 @@ During this course i:
 
 4.2 [text placeholder](link)
 
-[<span style="color:#81D2C7; font-weight:bold; font-size: 20px">'Text placeholder' Screenshot</span>](/)
+[![Screenchot-image-link](./images/markdown-styling/screenshot-image-link.png)](./)
 
 - **What was new**
   text placeholder
