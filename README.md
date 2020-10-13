@@ -45,7 +45,7 @@
 
 ***
 
-1.1. [Version Control with Git](https://www.udacity.com/courseversion-control-with-git--ud123) course
+1.1. [Version Control with Git](https://www.udacity.com/course/version-control-with-git--ud123) course
 
 [![Screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./images/completion-screenshots/version-control-with-git.png)
 
