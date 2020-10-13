@@ -45,7 +45,7 @@
 
 ***
 
-1.1. [Version Control with Git course](https://www.udacity.com/courseversion-control-with-git--ud123)
+1.1. [Version Control with Git](https://www.udacity.com/courseversion-control-with-git--ud123) course
 
 [![Screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./images/completion-screenshots/version-control-with-git.png)
 
@@ -141,18 +141,56 @@ During this course i:
   
 **Most of all in the course I liked presence of simple analogies  and visualizations of how git workflow works.**
 
-1.2 [text placeholder](link)
+1.2 [try.gihub.io](https://try.github.io/) materials
 
-[![Screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./)
+[![Screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./images/completion-screenshots/try-github-io.png)
 
 - **What was new**
-  text placeholder
+  - I understood that tags used as "milestones"/permanent commit marks/"anchors" in the codebase. I also learned `git describe` to see the nearest tag.
+  - I understood `git fetch` aim.
+    > remote branches (their representaion on local machine) reflect the state of the remote repositories since you last talked to those remotes (how relevant is your info about remote branches). `git fetch` is the way you talk to these remotes!
+  - I acquainted with teams and organizations; GitHub models of collaborative development (Shared repository, Fork and pull); `git log --follow [file]` command to list version history of file.
+  - I learned that git don't allow to push changes in remote if the changes you try to push aren't based on the latest varsion of remote branch. So you need to base your work on the most recent version of the remote branch (f.e. through rebasing/merging).
+    1. update local representation of the remote with `git fetch`;
+    2. rebase our work to reflect the new changes in the remote with `git merge` or `git rebase`;
+    3. push synced changes with `git push`.
+  Or just use `git pull --rebase`(fetch + rebase) -> `git push`  or `git pull` (fetch + merge) -> `git push`.
+  - It was new for me that work from different branches can be combined by not only merging but also by *rebasing* (`git rebase`) which provides linear sequence of commits.
+
+    > Rebasing essentially takes a set of commits, *"copies"* them, and plops them down somewhere else. Take commits of current branch, change them somehow and insert copies somewhere in another branch. No merge conflicts.
+
+    I understood that rebasing is great when you work on a feature branch, and the master branch has been updated. You can rebase start point of feature branch and get all the updates main branch, which would prevent future merging conflicts.
+
+  - I learned  `git rebase -i` for *interactive rebase* (when we use flags to perform some actions like reordering,combining, omitting, editing etc on the commits we're rebasing).
+  - I learned `git cherry pick` command which provide ability to include changes of specific commit into current branch.
+  - I understood that *Detaching HEAD* just means attaching it to a commit instead of a branch.
+  - I discovered that git refs can be used relative to branches/tags.
+  - I summed up my knowledge of branche meging:
+    - **fast-forward** merge happens when merged branch contains all commits from current branch. No new commit created.
+    - **non-fast-forward** merge happens when doesn't contain all commits from current branch. New commit (representing combined changes from 2 parent commits) created on current branch.
+
 - **What surprised**
-  text placeholder
+  - I understood that, for example, `git diff` command is not only about 'get difference between working directory and last commit'. By warying its flags this command can be used to get difference between working area and stage; between working area and specific commit; between different commits; between different trees and much more. While inspecting git documentation for different command i realized that each well-known git command is much more that we read about it in tutorials.
+  - I also liked a thought that branches are simply pointers to a specific commit and nothing more. I sure it's better to think of branch not as about line but as about dynamic end point which can form line of linked commits (pointed commit + it's parents) and from which specific set of commits can be reached. Each commit is specific context and by moving pointer we can switch between contexts and change the working directory content in one click.
+  - I discovered easy way to reassign branch pointer to another commit - `git branch -f master HEAD~3`.
+
 - **What will be used in practice**
-  text placeholder
+  - 'single-unit-change per commit' approach (no more combined commits!).
+  - [Git playground](https://learngitbranching.js.org/) to recheck my understanding of already known commands or to understand new ones.
+  - `git rebase` with its flags for interactive rebasing and `git cherry-pick` to copy a series of commits below HEAD.
+  - `git fetch` to fetch changes from remote and udpate local representation of the remote.
+  - `git reflog` to inspect repository changes history and know what to reset if needed.
+  - `git branch -f <branch> <commit-ref>` to reassign branch pointer to another commit.
+  - `git checkout <commit-ref>` to reassign HEAD pointer to commit.
+  - `git pull` (fetch and a merge).
+  - `git pull --rebase` (fetch and a rebase, creates linear commits history).
+
 - **General overview**
-  text placeholder
+  Content of this materials wasn't new for me at all. It was rather repetition of what i learned before and ability to check how well structured and 'close to real picture' are my knowledge. But while investigating extra materials i found many new new commands and practices to use. I understood that principle of 'single unit change per commit' should be followed for not only commits history readability and transparency, but also for ability to roll back specific changes with no influence on other parts of code. It is espesially important for me because in my previous pet projects i used to combine changes of different parts in single commits (shame on me :no_mouth:). I also clarified confusion about 'pull request' and 'git pull'. Git pull request is **request** for merge changes in some branch on remote. `Git pull` is **command** (combination of `git fetch` + `git merge`) which fetches changes from remote branch and automatically merges this changes in local branch if needed.
+
+  > Pull request - is a *place to compare and discuss* the differences introduced on a branch with reviews, comments, integrated tests, and more.
+  
+   I discovered for myself [GitHub Learning Lab](https://lab.github.com/) and i will used it to practise my skills (i already improved using of relative refs here). I also rediscovered [Git playground](https://learngitbranching.js.org/) (actually i found this resource earlier while searching for online environment for executing git commands). For me visual representation of any thing is much better than any amount of text material.
 
 ***
 
