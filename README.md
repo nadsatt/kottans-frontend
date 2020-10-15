@@ -11,8 +11,8 @@
 ## My progress :rocket:
 
  1. **GENERAL**
-    - [ ] [Git and Github](#1-git-and-github)
-    - [ ] [Linux CLI and Networking](#2-linux-cli-and-networking)
+    - [x] [Git and Github](#1-git-and-github)
+    - [x] [Linux CLI and Networking](#2-linux-cli-and-networking)
     - [ ] [VCS (hello gitty), GitHub and Collaboration](#3-vcs-hello-gitty-github-and-collaboration)
   
  2. **FRONT-END BASICS**
