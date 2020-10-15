@@ -234,9 +234,47 @@ During this course i:
 - **General overview**
   I didn't use Linux before, but i have experience with other UNIX-based OS and Windows. Due to fact that Linux is used the most in software engineering, this course was necessary part for me. I was scared a bit at the very beginning but as i started to execute interactive tasks i understood that it is not that big difference between one and another OS (especially between UNIX-based). Thanks to this set of tasks i clarified for myself how paths are constructed. I mean, i always used `cd ../` without knowing of how it actually works. And now i got a context.
 
-2.2 [text placeholder](link)
+2.2 [HTTP: The Protocol Every Web Developer Must Know - Part 1](https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177)
 
-[![Screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./)
+- **What was new**
+  - I understood that *stateless* protocol actually means the one in which no stored state & session info is required and each request treated as independent event. It's like chat with no history and context, just ability to read new message and send response.
+  - I learned that local path to files on server called 'resourse path'.
+  - I learned that PUT and DELETE request may be packaged as POST.
+  - I learned about HEAD method (same as GET, but without body in response), TRACE method (returns request, provides ability to look which request info was changed by intermediate servers and proxies), OPTIONS method (returns info about server capabilities and connection parameters).
+  - I learned about *Content-Disposition*, *Referer*, *If-Modified-Since*, *Last-Modified*, *Accept-Encoding*, *Etag* (specific resource version identifier), *Location*, *Via* (updated by all intermediate, proxies and gateways), *Pragma* (custom), *Upgrade* (to switch protocols and allow transition to a newer one), *Transfer-Encoding* (tune in which form data will be send), *Content-* (info about message body), *Accept-* (info about acceptable content), *If-* (for making request conditional), *Age* (time in seconds since the message was generated on the server), *Location* (redirection url) and other headers.
+  - I clarified understanding of HTTP request/response structure:
+    - *request*:
+      1. starting line/request line: method, path (after port), protocol version);
+      2. headers;
+      3. optional body.
+    - *response*:
+      1. starting line/status line (protocol version, status code, reason phrase);
+      2. headers;
+      3. optional body.
+  - I learned about headers classification:
+    1. request-specific headers;
+    2. response-specific headers;
+    3. general headers (for both);
+    4. entity headers (for both, define meta of message/entity body or about the resource identified by request).
+  - This picture clarified 'message' term for me.
+    ![](./images/markdown-styling/request-&-response-structure.png)
+    5. I refreshed knowledge of basic ExpressJS commands used in controllers creation.
+    6. Acquainted with APIs provided by Ruby on Rails and jQuery dedicated to backend-/frontend-specific work with requests and responses.
+- **What surprised**
+  - Existing of 2-- codes other than 200. I thought there is only one success code.
+  - Response body with chunck of data entity. I knew that data transfer through the network by chuncks but i used to think that it's only about byte code and all byte chunks always wrapped in single unit of response on high level.
+  - Ability to send data with GET request.
+  - Ability to use custom headers (will be treated as entity headers by the HTTP protocol) in client-server communication.
+  - Existing of cli for monitoring HTTP traffic.
+- **What will be used in practice**
+  - HEAD, TRACE, OPTIONS methods.
+  - Headers listed above.
+  - Status codes.
+  - [Fiddler](https://www.telerik.com/download/fiddler).
+- **General overview**
+  I know pretty good how web works and what's going on on the client and server side after entering any text in browder's search field. I also created web APIs but with no clarity of how the protocol itself works. This article helped me fill in my gaps. I repeated info about url, status codes and HTTP verbs. I liked the explanation that url is indentifier of the host we want to talk to and http verbs is language we use to define what we want host to do for us. I imagined headers before as complex object and was pleasantly surprised after matching what i read of them and what i saw of them in developer tools - it's just key-value pairs. I already used Chrome and Firefox devtools a lot for different aims, including network inspection, but i didn't use web debugging proxies. I also understood that APIs of different languages/frameworks which dedicated to request-response manipulations are pretty similiar on abstractioins level.
+
+2.3 [HTTP: The Protocol Every Web Developer Must Know - Part 2](https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-2--net-31155)
 
 - **What was new**
   text placeholder
