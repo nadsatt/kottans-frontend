@@ -47,7 +47,13 @@
 
 1.1. [Version Control with Git](https://www.udacity.com/course/version-control-with-git--ud123) course
 
-[![Screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./images/completion-screenshots/version-control-with-git.png)
+<details><summary>Screenshot</summary>
+<p>
+
+![Screenshot-image-link](./images/completion-screenshots/version-control-with-git.png)
+
+</p>
+</details>
 
 ![alert-image](./images/markdown-styling/alert.png)
 
@@ -143,7 +149,13 @@ During this course i:
 
 1.2 [try.gihub.io](https://try.github.io/) materials
 
-[![Screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./images/completion-screenshots/try-github-io.png)
+<details><summary>Screenshot</summary>
+<p>
+
+![Screenshot-image-link](./images/completion-screenshots/try-github-io.png)
+
+</p>
+</details>
 
 - **What was new**
   - I understood that tags used as "milestones"/permanent commit marks/"anchors" in the codebase. I also learned `git describe` to see the nearest tag.
