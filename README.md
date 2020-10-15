@@ -277,13 +277,27 @@ During this course i:
 2.3 [HTTP: The Protocol Every Web Developer Must Know - Part 2](https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-2--net-31155)
 
 - **What was new**
-  text placeholder
+  - I learned that HTTPS inserts additional layer of OSI model -  TLS/SSL(obsolete) protocol, and only then TCP protocol comes. Earlier i thought that HTTPS lies on top of TCP protocol.
+  - I discovered that default HTTPS port is 443.
+  - I learned that HTTP connection defined by source ip, port and destination ip, port.
+  - I discovered that in HTTP/1.0 all connections were closed after a single transaction and in HTTP/1.1 persistent (until client closes it) connections were introduced. To disable this default feature 'Connection: close' request header should be defined.
+  - I learned about ability to 'pipeline' requsets - send  multiple requests without waiting for each response (parallel connections).
+  ![http-features-by-version](https://www.researchgate.net/profile/Jawad_Manzoor/publication/312560536/figure/fig1/AS:718584909148161@1548335401105/Comparison-of-HTTP-versions.jpg)
+  - I learned ways the server collects info about client: from certain request headers, from client IP, with fat URLs (URLs modified to include user state information), with cookies.
+  - I learned about Proxy Authentication, Digest Authentication (same as Basic, but sends hash instead of encoded credentials).
+  - I learned about certificates used as server identifiers.
+    > website security certificate is like a driver’s license
+  - I learned about web caching: private cach for specific user in his browser and public proxy cach for multiple users (caches most frequent requested resources).
+  - I learned how cach is maintained both in browser and proxy: recieve request -> if no data in cach request it from server and save in cach -> check cach for freshness -> response with data from cach.
+  - I learned about Document Expiration (server able to attach an exp. date to each document with *Cache-control* header so client/caching server will know when to check if cach is fresh) and Server Revalidation (when client/caching server check cach  freshness). Document Expiration defines time after which Server Revalidation has to occur.
+  - I learned that Server Revalidation done with *If-Modified-Since* or *If-None-Match* request header. First based on date *Last-Modified* response header is used, second - on content and content hash defined in *ETags* response header is used.
+  - I learned about *Cache-Control* values.
 - **What surprised**
-  text placeholder
+  - Ability to define caching rules by client while requesting resource. Also *Cache-Control* header is used, but with another values.
 - **What will be used in practice**
-  text placeholder
+  - I guess almost all listed here.
 - **General overview**
-  text placeholder
+  Thanks to this article i learned many bits of new information. I repeated process of HTTP connection establishing and how server serves the requests. I already worked with Basic Authentication, but i didn't know that it was Basic Authentication. So it was helpful to investigate a bit authentication types and define direction for further gaps filling.
 
 ***
 
