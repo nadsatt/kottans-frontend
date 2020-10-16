@@ -269,7 +269,7 @@ During this course i:
     3. general headers (for both);
     4. entity headers (for both, define meta of message/entity body or about the resource identified by request).
   - This picture clarified 'message' term for me.
-    ![](./images/markdown-styling/request-&-response-structure.png)
+    ![request-&-response-structure](./images/markdown-styling/request-&-response-structure.png)
     5. I refreshed knowledge of basic ExpressJS commands used in controllers creation.
     6. Acquainted with APIs provided by Ruby on Rails and jQuery dedicated to backend-/frontend-specific work with requests and responses.
 - **What surprised**
@@ -317,18 +317,72 @@ During this course i:
 
 ***
 
-3.1 [text placeholder](link)
+3.1 [GitHub & Collaboration](https://classroom.udacity.com/courses/ud456) course
 
-[![Screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./)
+[![github-and-collaboration-completion-screenshot](./images/markdown-styling/screenshot-image-link.png)](./images/completion-screenshots/github-and-collaboration.png)
 
 - **What was new**
-  text placeholder
+  - I learned that behind the 'origin' (or whatever name is used as repo shortname) is just a url to the remote repository. Therefore, using of `git https://username@github.com/username/project` identical to `git <remote-name>`.
+  - `git remote` to log remote name, `git <remote-name> -v` to log remote name + full adress.
+  - I learned `git remote` common subcommands used to manage remotes:
+    | Command | Usage |
+    | --- | --- |
+    | `git remote add <remote-name> <remote-link>`  | link local and remote repos |
+    | `git remote remove <remote-name>`| disconnect from remote |
+  - Learned how to sync local and remote branches with `git fetch <remote-name> <branch>`, `git pull <remote-name> <branch>`, `git push <remote-name> <branch>`.
+  - I learned that local representation of remote branch is called 'tracking branch'.
+
+    > tracking branch is local branch which represents remote branch.
+
+    > origin/master in the local repository is called a *tracking branch* because it's tracking the progress of the master branch on the remote repository.
+
+  - I compared fork vs clone. Fork is copy of somebody's repo on your GitHub account (you owner of copy, you can link local repo to it and push changes in it). Clone is just way to link you local repo with any GitHub repository (if you linked to somebody's repo, you can only fetch changes and create pull requests for making changes). Simply saying, forking is copying on the GitHub level, cloning - on local machine level.
+  - I learned `git shortlog` command to log all commits by authors, `-s` flag to show only author & number of commits, `-n` flag to sort authors by commits number, `git log --author=..` to log commits of specific contributor.
+  - I learned `git <output> --grep <text>` command which can be used in different variations to find specific parts of output with defined text. For example, `git log --oneline --grep bug` to watch all commits related to bugs.
+  - I learned basic concepts of contribution and issue/pull request creation/discussion.
+  - I learned that topic branch creation is neccessary for contribution to somebody's repo. Topic branch name should reflect what feature/issue you've worked on in your code.
+  - I learned how to sync changes in local forked repo with original repo. Just the way we link local repo with fork (by using *origin* name) we can link local repo directly to original repo (by using *upstream* name). To the first one we push changes, from the second one we pull. In this case our local repo will be linked with multiple remotes. 'Origin', 'upstream' - id juust commonly used names.
+    ![origin-vs-upstream](https://i.stack.imgur.com/R06df.png)
+  - I learned how to keep local, origin and upstream repos sync. Pull changes from upstream in local -> push changes from local in remote.
+  - I learned that squashing (rebasing) is dangerous and it should be used only on your local commits, non-pushed commits.
+    > Whenever you rebase commits, Git will create a new SHA for each commit!
+
+    To feel comfortable with rebasing,  'backup' branch pointing on last rebased commit can be created. After rebasing master branch will point on squashed commits and backup - on original commits. Commit we provide in `git rebase <commit-ref>` will be base of rebased commits.
+  - I learned next commands for interactive rebasing:
+    | Command | Usage |
+    | --- | --- |
+    | p/pick | keep the commit as is - default value for each rebased commit |
+    | r/reword | keep the commit's content but alter the commit message |
+    | e/edit | to keep the commit's content but stop before committing (get state when defined commit on 'select files for for index' stage) |
+    | s/squash | combine this commit's changes into the previous commit (the commit above it) |
+    | f/fixup | combine this commit's change into the previous one but drop the commit message |
+    | x/exec | run a shell command |
+    | d/drop | delete the commit |
+  - Learned about `git push --force` (especially dangerous thing). Default GitHub's relation to `git push` - if you try to push and if remote has commits you don't have locally, `git push` won't be executed. Forse push disables this behaviour.
 - **What surprised**
-  text placeholder
+  I was surprised to find `git <output> --grep=<text>`/`git <output> --grep <text>` command in git (Hello, Linux and its `<output> | grep <text>` command). Pretty nice command both for computer-level and git aimes.
 - **What will be used in practice**
-  text placeholder
+  Everything listed above.
 - **General overview**
-  text placeholder
+  From the very beggining i grateful to this course for the ability to train recently learned Linux commands. First task was to create project with files and i decided to do all work in terminal (as real gurus do). While doing it not only repeated learned but find very usefull command to to supplement file content (`cat >> <file>`) or define new one (`cat > <file>`). Explorations of git commands is much faster when you can change file right in terminal. During this course i trained process of linking local repository to remote repository. I also liked
+  focusing on such seemingly obvious thing as the static nature of the local view of remote. I had no experience of collective work on remote, and this is an important aspect to keep in mind at the very beginning.
+
+  > origin/master tracking branch is not a live representation of where the branch exists on the remote repository. If a change is made to the remote repository not by us but by someone else, the origin/master tracking branch in our local repository will not move.
+  >
+  > If the remote's master moves, the local origin/master branch stays the same
+
+  As for other parts of the course, it was sort of repetition what i learned in 'Remote' section of [Learn Git Branching](https://learngitbranching.js.org/). I repeated how to fetch and merge/rebase incoming changes and push outgoing changes. I repeated how `git pull` and `git fetch` commands connected:
+  > git getch is half of git pull
+  >
+  > *git pull*: copy new commits from remote branch and move/update tracking branch -> move local branch.
+  >
+  > *git fetch*: copy new commits from remote branch and move/update tracking branch.
+
+  While learning commits history of random repository i understood that commit message descriptiveness define quality, flexibility, speed and easiest of further code upbilding on project. Useful patterns should be selected and followed from the very beggining of repository construction. I also understood that if there is even the slightest ambiguity in the commit message, it is better to add some additional information with detailed description.
+
+  > rule of good commit/branch name - it shouldn't raise questions from another person. Link it with the context everyone has.
+
+  I also repeated process of passing changes throught local -> fork -> original repository with pull request.
 
 3.2 [text placeholder](link)
 
