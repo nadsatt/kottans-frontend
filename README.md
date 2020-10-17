@@ -47,13 +47,7 @@
 
 #### 1.1. Course [Version Control with Git](https://www.udacity.com/course/version-control-with-git--ud123)
 
-<details><summary>Screenshot</summary>
-<p>
-
-![Screenshot-image-link](./images/completion-screenshots/version-control-with-git.png)
-
-</p>
-</details>
+[![version-control-with-git-completion-screenshot](./images/markdown-styling/screenshot-image-link.png)](./images/completion-screenshots/version-control-with-git.png)
 
 ![alert-image](./images/markdown-styling/alert.png)
 
@@ -149,13 +143,7 @@ During this course i:
 
 #### 1.2 Materials [try.gihub.io](https://try.github.io/)
 
-<details><summary>Screenshot</summary>
-<p>
-
-![Screenshot-image-link](./images/completion-screenshots/try-github-io.png)
-
-</p>
-</details>
+[![try-github-io-completion-screenshot](./images/markdown-styling/screenshot-image-link.png)](./images/completion-screenshots/try-github-io.png)
 
 - **What was new**
   - I understood that tags used as "milestones"/permanent commit marks/"anchors" in the codebase. I also learned `git describe` to see the nearest tag.
@@ -212,13 +200,7 @@ During this course i:
 
 #### 2.1 Course [Linux Survival (4 modules)](https://linuxsurvival.com/linux-tutorial-introduction/)
 
-<details><summary>Screenshot</summary>
-<p>
-
-![Screenshot-image-link](./images/completion-screenshots/task_linux_cli.png)
-
-</p>
-</details>
+[![task-linux-cli-completion-screenshot](./images/markdown-styling/screenshot-image-link.png)](./images/completion-screenshots/task_linux_cli.png)
 
 - **What was new**
   - `more <file>` to show file content.
