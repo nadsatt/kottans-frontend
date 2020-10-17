@@ -384,18 +384,15 @@ I already finished this step in [Git and GitHub](#1-git-and-github) section, rev
 
 ***
 
-#### 4.1 [text placeholder](link)
+#### 4.1 Course [Intro to HTML & CSS (Eng)](https://www.udacity.com/course/intro-to-html-and-css--ud001)
 
-[![Screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./)
+[![intro-html-css-completion-screenshot](./images/markdown-styling/screenshot-image-link.png)](./images/completion-screenshots/intro-html-css.png)
 
-- **What was new**
-  text placeholder
-- **What surprised**
-  text placeholder
-- **What will be used in practice**
-  text placeholder
+- **What was new** hexadecimal shorthands (#0f0 === #00ff00)
+- **What surprised** -
+- **What will be used in practice** -
 - **General overview**
-  text placeholder
+  This course represents very basic info so passing it was as relaxable as watching cats on YouTube.
 
 #### 4.2 [text placeholder](link)
 
