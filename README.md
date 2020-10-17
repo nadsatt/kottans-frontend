@@ -384,18 +384,11 @@ During this course i:
 
   I also repeated process of passing changes throught local -> fork -> original repository with pull request.
 
-3.2 [text placeholder](link)
+3.2 [learngitbranching.js.org](https://learngitbranching.js.org/) interactive course
 
-[![Screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./)
+[![Screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./images/completion-screenshots/try-github-io.png)
 
-- **What was new**
-  text placeholder
-- **What surprised**
-  text placeholder
-- **What will be used in practice**
-  text placeholder
-- **General overview**
-  text placeholder
+I already finished this step in Git and GitHub section, so review can be found here.
 
 ***
 
