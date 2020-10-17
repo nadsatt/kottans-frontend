@@ -45,7 +45,7 @@
 
 ***
 
-1.1. [Version Control with Git](https://www.udacity.com/course/version-control-with-git--ud123) course
+#### 1.1. Course [Version Control with Git](https://www.udacity.com/course/version-control-with-git--ud123)
 
 <details><summary>Screenshot</summary>
 <p>
@@ -147,7 +147,7 @@ During this course i:
   
 **Most of all in the course I liked presence of simple analogies  and visualizations of how git workflow works.**
 
-1.2 [try.gihub.io](https://try.github.io/) materials
+#### 1.2 Materials [try.gihub.io](https://try.github.io/)
 
 <details><summary>Screenshot</summary>
 <p>
@@ -210,7 +210,7 @@ During this course i:
 
 ***
 
-2.1 [Linux Survival (4 modules)](https://linuxsurvival.com/linux-tutorial-introduction/) course
+#### 2.1 Course [Linux Survival (4 modules)](https://linuxsurvival.com/linux-tutorial-introduction/)
 
 <details><summary>Screenshot</summary>
 <p>
@@ -246,7 +246,7 @@ During this course i:
 - **General overview**
   I didn't use Linux before, but i have experience with other UNIX-based OS and Windows. Due to fact that Linux is used the most in software engineering, this course was necessary part for me. I was scared a bit at the very beginning but as i started to execute interactive tasks i understood that it is not that big difference between one and another OS (especially between UNIX-based). Thanks to this set of tasks i clarified for myself how paths are constructed. I mean, i always used `cd ../` without knowing of how it actually works. And now i got a context.
 
-2.2 [HTTP: The Protocol Every Web Developer Must Know - Part 1](https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177)
+#### 2.2 Article [HTTP: The Protocol Every Web Developer Must Know - Part 1](https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177)
 
 - **What was new**
   - I understood that *stateless* protocol actually means the one in which no stored state & session info is required and each request treated as independent event. It's like chat with no history and context, just ability to read new message and send response.
@@ -286,7 +286,7 @@ During this course i:
 - **General overview**
   I know pretty good how web works and what's going on on the client and server side after entering any text in browder's search field. I also created web APIs but with no clarity of how the protocol itself works. This article helped me fill in my gaps. I repeated info about url, status codes and HTTP verbs. I liked the explanation that url is indentifier of the host we want to talk to and http verbs is language we use to define what we want host to do for us. I imagined headers before as complex object and was pleasantly surprised after matching what i read of them and what i saw of them in developer tools - it's just key-value pairs. I already used Chrome and Firefox devtools a lot for different aims, including network inspection, but i didn't use web debugging proxies. I also understood that APIs of different languages/frameworks which dedicated to request-response manipulations are pretty similiar on abstractioins level.
 
-2.3 [HTTP: The Protocol Every Web Developer Must Know - Part 2](https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-2--net-31155)
+#### 2.3 Article [HTTP: The Protocol Every Web Developer Must Know - Part 2](https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-2--net-31155)
 
 - **What was new**
   - I learned that HTTPS inserts additional layer of OSI model -  TLS/SSL(obsolete) protocol, and only then TCP protocol comes. Earlier i thought that HTTPS lies on top of TCP protocol.
@@ -317,7 +317,7 @@ During this course i:
 
 ***
 
-3.1 [GitHub & Collaboration](https://classroom.udacity.com/courses/ud456) course
+#### 3.1 Course [GitHub & Collaboration](https://classroom.udacity.com/courses/ud456)
 
 [![github-and-collaboration-completion-screenshot](./images/markdown-styling/screenshot-image-link.png)](./images/completion-screenshots/github-and-collaboration.png)
 
@@ -384,11 +384,11 @@ During this course i:
 
   I also repeated process of passing changes throught local -> fork -> original repository with pull request.
 
-3.2 [learngitbranching.js.org](https://learngitbranching.js.org/) interactive course
+#### 3.2 Course [learngitbranching.js.org](https://learngitbranching.js.org/)
 
 [![Screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./images/completion-screenshots/try-github-io.png)
 
-I already finished this step in Git and GitHub section, so review can be found here.
+I already finished this step in [Git and GitHub](#1-git-and-github) section, review can be found [here](#12-materials-trygihubio).
 
 ***
 
@@ -402,7 +402,7 @@ I already finished this step in Git and GitHub section, so review can be found h
 
 ***
 
-4.1 [text placeholder](link)
+#### 4.1 [text placeholder](link)
 
 [![Screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./)
 
@@ -415,7 +415,7 @@ I already finished this step in Git and GitHub section, so review can be found h
 - **General overview**
   text placeholder
 
-4.2 [text placeholder](link)
+#### 4.2 [text placeholder](link)
 
 [![Screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./)
 
@@ -434,7 +434,7 @@ I already finished this step in Git and GitHub section, so review can be found h
 
 ***
 
-5.1 [text placeholder](link)
+#### 5.1 [text placeholder](link)
 
 [![Screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./)
 
@@ -447,7 +447,7 @@ I already finished this step in Git and GitHub section, so review can be found h
 - **General overview**
   text placeholder
 
-5.2 [text placeholder](link)
+#### 5.2 [text placeholder](link)
 
 [![Screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./)
 
