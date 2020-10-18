@@ -1,12 +1,12 @@
-![cat-banner-top](./images/markdown-styling/cat-banner-top.png)
+![cat-banner-top](./markdown-styling/cat-banner-top.png)
 
 # kottans-frontend
 
 ## Repository dedicated to participation in [Kottans frontend course](https://github.com/kottans/frontend)
 
-![cat-banner-bottom](./images/markdown-styling/cat-banner-bottom.png)
+![cat-banner-bottom](./markdown-styling/cat-banner-bottom.png)
 
-![box-shadow-top](./images/markdown-styling/box-shadow-top.png)
+![box-shadow-top](./markdown-styling/box-shadow-top.png)
 
 ## My progress :rocket:
 
@@ -33,13 +33,13 @@
     - [ ] [Website Performance Optimization](#14-website-performance-optimization)
     - [ ] [Friends App - real project!](#15-friends-app-real-project)
   
-![box-shadow-bottom](./images/markdown-styling/box-shadow-bottom.png)
+![box-shadow-bottom](./markdown-styling/box-shadow-bottom.png)
 
-![cat-banner-top](./images/markdown-styling/cat-picture-top.png)
+![cat-banner-top](./markdown-styling/cat-picture-top.png)
 
 ## GENERAL
 
-![cat-picture-bottom](./images/markdown-styling/cat-picture-bottom.png)
+![cat-picture-bottom](./markdown-styling/cat-picture-bottom.png)
 
 ### 1. Git and GitHub
 
@@ -47,9 +47,9 @@
 
 #### 1.1. Course [Version Control with Git](https://www.udacity.com/course/version-control-with-git--ud123)
 
-[![screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./images/completion-screenshots/version-control-with-git.png)
+[![screenshot-image-link](./markdown-styling/screenshot-image-link.png)](./task_git_intro/version-control-with-git.png)
 
-![alert-image](./images/markdown-styling/alert.png)
+![alert-image](./markdown-styling/alert.png)
 
 During this course i:
 
@@ -143,7 +143,7 @@ During this course i:
 
 #### 1.2 Materials [try.gihub.io](https://try.github.io/)
 
-[![screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./images/completion-screenshots/try-github-io.png)
+[![screenshot-image-link](./markdown-styling/screenshot-image-link.png)](./task_git_intro/git-branching.png)
 
 - **What was new**
   - I understood that tags used as "milestones"/permanent commit marks/"anchors" in the codebase. I also learned `git describe` to see the nearest tag.
@@ -200,7 +200,7 @@ During this course i:
 
 #### 2.1 Course [Linux Survival (4 modules)](https://linuxsurvival.com/linux-tutorial-introduction/)
 
-[![screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./images/completion-screenshots/task_linux_cli.png)
+[![screenshot-image-link](./markdown-styling/screenshot-image-link.png)](./task_linux_cli_http/linux-cli.png)
 
 - **What was new**
   - `more <file>` to show file content.
@@ -301,7 +301,7 @@ During this course i:
 
 #### 3.1 Course [GitHub & Collaboration](https://classroom.udacity.com/courses/ud456)
 
-[![screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./images/completion-screenshots/github-and-collaboration.png)
+[![screenshot-image-link](./markdown-styling/screenshot-image-link.png)](./task_git_collaboration/github-and-collaboration.png)
 
 - **What was new**
   - I learned that behind the 'origin' (or whatever name is used as repo shortname) is just a url to the remote repository. Therefore, using of `git https://username@github.com/username/project` identical to `git <remote-name>`.
@@ -368,7 +368,7 @@ During this course i:
 
 #### 3.2 Course [learngitbranching.js.org](https://learngitbranching.js.org/)
 
-[![screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./images/completion-screenshots/try-github-io.png)
+[![screenshot-image-link](./markdown-styling/screenshot-image-link.png)](./task_git_collaboration/git-branching.png)
 
 I already finished this step in [Git and GitHub](#1-git-and-github) section, review can be found [here](#12-materials-trygihubio).
 
@@ -378,7 +378,7 @@ I already finished this step in [Git and GitHub](#1-git-and-github) section, rev
 
 ## FRONT-END BASICS
 
-![cat-picture-bottom](./images/markdown-styling/cat-picture-bottom.png)
+![cat-picture-bottom](./markdown-styling/cat-picture-bottom.png)
 
 ### 4. Intro to HTML & CSS
 
@@ -386,7 +386,7 @@ I already finished this step in [Git and GitHub](#1-git-and-github) section, rev
 
 #### 4.1 Course [Intro to HTML & CSS (Eng)](https://www.udacity.com/course/intro-to-html-and-css--ud001)
 
-[![screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./images/completion-screenshots/intro-html-css.png)
+[![screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./task_html_css_intro/intro-html-css.png)
 
 - **What was new** hexadecimal shorthands (#0f0 === #00ff00)
 - **What surprised** -
@@ -446,11 +446,11 @@ I already finished this step in [Git and GitHub](#1-git-and-github) section, rev
 
 ### 8. Document Object Model - practice
 
-![cat-picture-top](./images/markdown-styling/cat-picture-top.png)
+![cat-picture-top](./markdown-styling/cat-picture-top.png)
 
 ## ADVANCED TOPICS
 
-![cat-picture-bottom](./images/markdown-styling/cat-picture-bottom.png)
+![cat-picture-bottom](./markdown-styling/cat-picture-bottom.png)
 
 ### 9. Building a Tiny JS World (pre-OOP) - practice
 
