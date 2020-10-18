@@ -394,18 +394,17 @@ I already finished this step in [Git and GitHub](#1-git-and-github) section, rev
 - **General overview**
   This course represents very basic info so passing it was as relaxable as watching cats on YouTube.
 
-#### 4.2 [text placeholder](link)
+#### 4.2 Course [Learn HTML(Eng)](https://www.codecademy.com/learn/learn-html)
 
-[![Screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./)
+[![Screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./task_html_css_intro/learn-html.png)
 
 - **What was new**
-  text placeholder
-- **What surprised**
-  text placeholder
-- **What will be used in practice**
-  text placeholder
+  - I discovered `datalist` tag and `th`'s *scope* attribute (defines whether its header for column or for row).
+  - I clarified that `section` tag is used to group repeated/connected content,`article` represents single-unit content, `aside` tag is used to mark additional information that can enhance another element but isn’t required for main content understanding (additional info placed next to a main piece of content).
+- **What surprised** -
+- **What will be used in practice** -
 - **General overview**
-  text placeholder
+  This course represents very basic info so passing it was as relaxable as watching cats on YouTube.
 
 ***
 
