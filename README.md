@@ -47,7 +47,7 @@
 
 #### 1.1. Course [Version Control with Git](https://www.udacity.com/course/version-control-with-git--ud123)
 
-[![version-control-with-git-completion-screenshot](./images/markdown-styling/screenshot-image-link.png)](./images/completion-screenshots/version-control-with-git.png)
+[![screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./images/completion-screenshots/version-control-with-git.png)
 
 ![alert-image](./images/markdown-styling/alert.png)
 
@@ -143,7 +143,7 @@ During this course i:
 
 #### 1.2 Materials [try.gihub.io](https://try.github.io/)
 
-[![try-github-io-completion-screenshot](./images/markdown-styling/screenshot-image-link.png)](./images/completion-screenshots/try-github-io.png)
+[![screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./images/completion-screenshots/try-github-io.png)
 
 - **What was new**
   - I understood that tags used as "milestones"/permanent commit marks/"anchors" in the codebase. I also learned `git describe` to see the nearest tag.
@@ -200,7 +200,7 @@ During this course i:
 
 #### 2.1 Course [Linux Survival (4 modules)](https://linuxsurvival.com/linux-tutorial-introduction/)
 
-[![task-linux-cli-completion-screenshot](./images/markdown-styling/screenshot-image-link.png)](./images/completion-screenshots/task_linux_cli.png)
+[![screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./images/completion-screenshots/task_linux_cli.png)
 
 - **What was new**
   - `more <file>` to show file content.
@@ -301,7 +301,7 @@ During this course i:
 
 #### 3.1 Course [GitHub & Collaboration](https://classroom.udacity.com/courses/ud456)
 
-[![github-and-collaboration-completion-screenshot](./images/markdown-styling/screenshot-image-link.png)](./images/completion-screenshots/github-and-collaboration.png)
+[![screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./images/completion-screenshots/github-and-collaboration.png)
 
 - **What was new**
   - I learned that behind the 'origin' (or whatever name is used as repo shortname) is just a url to the remote repository. Therefore, using of `git https://username@github.com/username/project` identical to `git <remote-name>`.
@@ -368,7 +368,7 @@ During this course i:
 
 #### 3.2 Course [learngitbranching.js.org](https://learngitbranching.js.org/)
 
-[![Screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./images/completion-screenshots/try-github-io.png)
+[![screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./images/completion-screenshots/try-github-io.png)
 
 I already finished this step in [Git and GitHub](#1-git-and-github) section, review can be found [here](#12-materials-trygihubio).
 
@@ -386,7 +386,7 @@ I already finished this step in [Git and GitHub](#1-git-and-github) section, rev
 
 #### 4.1 Course [Intro to HTML & CSS (Eng)](https://www.udacity.com/course/intro-to-html-and-css--ud001)
 
-[![intro-html-css-completion-screenshot](./images/markdown-styling/screenshot-image-link.png)](./images/completion-screenshots/intro-html-css.png)
+[![screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./images/completion-screenshots/intro-html-css.png)
 
 - **What was new** hexadecimal shorthands (#0f0 === #00ff00)
 - **What surprised** -
@@ -396,7 +396,7 @@ I already finished this step in [Git and GitHub](#1-git-and-github) section, rev
 
 #### 4.2 Course [Learn HTML(Eng)](https://www.codecademy.com/learn/learn-html)
 
-[![Screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./task_html_css_intro/learn-html.png)
+[![screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./task_html_css_intro/learn-html.png)
 
 - **What was new**
   - I discovered `datalist` tag and `th`'s *scope* attribute (defines whether its header for column or for row).
