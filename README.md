@@ -406,6 +406,31 @@ I already finished this step in [Git and GitHub](#1-git-and-github) section, rev
 - **General overview**
   This course represents very basic info so passing it was as relaxable as watching cats on YouTube.
 
+#### 4.3 Course [Learn CSS(Eng)](https://www.codecademy.com/learn/learn-css)
+
+[![screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./task_html_css_intro/learn_css.png)
+
+- **What was new**
+  - I discovered that font also called *typeface* and it's default value for all html elements is Times New Roman.
+  - I discovered that if we define numeric `word-spacing`, defined space amount will be added to default(normal) spacing (to 0.25em).
+  - I learned about `@font-face` css at-rule which specifies font from either a remote server or a locally-installed font on the user's own computer.
+- **What surprised** -
+- **What will be used in practice** -
+- **General overview**
+  This course represents very basic info so passing it was as relaxable as watching cats on YouTube. But while reading about `line-height` i decided to dive deeper into how line-height property works and ended up with defined schemes.
+  <details>
+  <summary>line-height inheritance</summary>
+  <pre>
+    <img src="./markdown-styling/line-height-inheritance.png">
+  </pre>
+  </details>
+  <details>
+  <summary>box types</summary>
+  <pre>
+    <img src="./markdown-styling/line-boxes.png">
+  </pre>
+  </details>
+
 ***
 
 ### 5. Responsive Web Design
