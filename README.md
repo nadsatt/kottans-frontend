@@ -374,7 +374,7 @@ I already finished this step in [Git and GitHub](#1-git-and-github) section, rev
 
 ***
 
-![cat-picture-top](./images/markdown-styling/cat-picture-top.png)
+![cat-picture-top](./markdown-styling/cat-picture-top.png)
 
 ## FRONT-END BASICS
 
