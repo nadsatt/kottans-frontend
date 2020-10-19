@@ -386,7 +386,7 @@ I already finished this step in [Git and GitHub](#1-git-and-github) section, rev
 
 #### 4.1 Course [Intro to HTML & CSS (Eng)](https://www.udacity.com/course/intro-to-html-and-css--ud001)
 
-[![screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./task_html_css_intro/intro-html-css.png)
+[![screenshot-image-link](./markdown-styling/screenshot-image-link.png)](./task_html_css_intro/intro-html-css.png)
 
 - **What was new** hexadecimal shorthands (#0f0 === #00ff00)
 - **What surprised** -
@@ -396,7 +396,7 @@ I already finished this step in [Git and GitHub](#1-git-and-github) section, rev
 
 #### 4.2 Course [Learn HTML(Eng)](https://www.codecademy.com/learn/learn-html)
 
-[![screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./task_html_css_intro/learn-html.png)
+[![screenshot-image-link](./markdown-styling/screenshot-image-link.png)](./task_html_css_intro/learn-html.png)
 
 - **What was new**
   - I discovered `datalist` tag and `th`'s *scope* attribute (defines whether its header for column or for row).
@@ -408,7 +408,7 @@ I already finished this step in [Git and GitHub](#1-git-and-github) section, rev
 
 #### 4.3 Course [Learn CSS(Eng)](https://www.codecademy.com/learn/learn-css)
 
-[![screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./task_html_css_intro/learn_css.png)
+[![screenshot-image-link](./markdown-styling/screenshot-image-link.png)](./task_html_css_intro/learn_css.png)
 
 - **What was new**
   - I discovered that font also called *typeface* and it's default value for all html elements is Times New Roman.
@@ -439,7 +439,7 @@ I already finished this step in [Git and GitHub](#1-git-and-github) section, rev
 
 #### 5.1 [text placeholder](link)
 
-[![Screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./)
+[![screenshot-image-link](./markdown-styling/screenshot-image-link.png)](./)
 
 - **What was new**
   text placeholder
@@ -452,7 +452,7 @@ I already finished this step in [Git and GitHub](#1-git-and-github) section, rev
 
 #### 5.2 [text placeholder](link)
 
-[![Screenshot-image-link](./images/markdown-styling/screenshot-image-link.png)](./)
+[![screenshot-image-link](./markdown-styling/screenshot-image-link.png)](./)
 
 - **What was new**
   text placeholder
