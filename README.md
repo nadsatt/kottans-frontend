@@ -17,7 +17,7 @@
   
  2. **FRONT-END BASICS**
   
-    - [ ] [Intro to HTML & CSS](#4-intro-to-html-css)
+    - [x] [Intro to HTML & CSS](#4-intro-to-html-css)
     - [ ] [Responsive Web Design](#5-responsive-web-design)
     - [ ] [HTML & CSS Practice](#6-html-css-practice)
     - [ ] [JavaScript Basics](#7-javascript-basics)
