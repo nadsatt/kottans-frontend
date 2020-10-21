@@ -437,18 +437,82 @@ I already finished this step in [Git and GitHub](#1-git-and-github) section, rev
 
 ***
 
-#### 5.1 [text placeholder](link)
+#### 5.1 Course [Responsive Web Design Fundamentals](https://www.udacity.com/course/responsive-web-design-fundamentals--ud893)
 
 [![screenshot-image-link](./markdown-styling/screenshot-image-link.png)](./)
 
 - **What was new**
-  text placeholder
+  - I discovered remote debugging.
+  - I learned about `Mobile First` approach which helps to prioritize the content. First do design for small devices -> then for middle -> then for big. With this approach key content will always be on the screen.
+  - I learned that mobile clickable elements have to be at least 48x48 px.
+  - I learned about 'tools' used for designing responsive layouts:
+    - *media queries* - can be appliead in 3 ways: in .html with `<link>` tag and `media` attr, in .css with `@media` css at-rule, in .css with `@import` css at-rule (this one bad for perfomance).
+    - *grid*.
+    - *flexbox*.
+  - I learned than i shouldn't use `min-device-width` and `max-device-width` media features (`min-width` relates to browser window width while `min-device-width` - to screen width).
+  - I learned that point in which the page changes layout called *breakpoint*.
+  - I learned about *minor breakpoint* (breakpoint in which huge change of page layout doesn't occur but something slightly changes).
+    > text reflowing it's not breakpoint!
+
+    > It is better to to add minor breakpoints between major breakpoints to add 'cosmetic' changes for better readability. For example, adjust margins and padding, increase font/icon size etc.
+
+    > Adding major breakpoint === adding media query which makes layout changes.
+
+    > Adding minor breakpoint === adding additional media query (or using existing one) to make only cosmetic changes.
+
+    Why adding minor breakpoint matters:
+    ![without-vs-with-minor-breakpoint](./markdown-styling/without-vs-with-minor-breakpoint.png)
+
+    PS: adding only `margin: 0 auto` it's a minor breakpoint.
+  - I learned about breakpoints selection. In the devtools open page on the smallest device possible and make it wider while looking to see when the content will tell you that it needs a breakpoint. Most surprisingly, I used this strategy in the past without knowing that it stands as specific approach.
+    > We shouldn't choose breakpoints at all, we should find them using our content as a guide.
+  - I learned commonn patterns used for responsive design (in some cases in combination):
+    ![layout-patterns](https://image.slidesharecdn.com/mobiledesignstrategicsolutions-120823190643-phpapp02/95/mobile-design-strategic-solutions-55-728.jpg?cb=1345800663)
+    - *Column Drop* (flex-based). On breakpoints - add/remove column, between breakpoints - expand/narrow columns, after last breakpoint - add horizontal margins.
+    - *Mostly Fluid* (flex- and grid-based). Similiar to *Column Drop*, but most grid-like, with more complex/grid-like layout appearing as window expands. Like in the *Column Drop*, with narrowest window the layout is stacked, but as window expands, the grid pattern starts to appear. After last breakpoint - add horizontal margins.
+    - *Layout Shifter*. Content moves about (using `order` prop to move items), instead of reflowing and dropping below other columns. While the prevoius approaches about 'fit content to width', *Layout Shifter* is about 'find place for this content on this width'. On each breakpoint content can be placed in any area so there is significant differences between major breakpoints.
+      > Each flex item can swap places with first/last item in flex container by using `order: -1`/`order: 1`. Of course already defined order values of other grid items should be taken into account. For example, if the first item in grid has `order: -1`, we will be able to place specific item on the first place by specyfing `order: -2`. If no item in grid has defined order value, setting `order: -1` will be enough.
+      ![flexbox-items-order](./markdown-styling/flexbox-order.png)
+    - *Off Canvas*. Instead of stacking content vertically, make less frequently used content visible on large screen and hidden on small screen (f.e., visible only after hovering/clicking icon).
+  - I learned 2 approaches used for responsive images:
+    - *Dimension switching - different sizes, same resolution* (depends on device viewport). To implement use `srcset`, `src`, `sizes` attr in `img` tag.
+    - *Resolution switching - same size, different resolutions* (depends on device DPR). To implement use `srcset` and `src` attr in `img` tag.
+    - *Crop factor switching - art direction* (depends on viewport width). To implement use `picture` tag as wrapper for `source` and `img` tags.
+  - I learned 3 approaches for responsive tables:
+    - *Hidden columns* - hide columns based on their importance. To implement use `display: none`. Instead of hiding it's better to use abbreviate headers.
+    - *No more tables* - extra columns of table is collapsed and placed at the bottom of the table. To implement define `display:block` for table and all its elements -> remove header row from the visible part of document (we dont need it to be displayed, it's for screen readers) -> place body tds on the right to create space for column-header on the left -> to add column-header on the left, use `td::before` and `content: attr(..)` to create element on the left and insert content of moved header.
+    - *Contained tables* - div 100%-width wrapper for table and `overflow-x: auto` for horizontal scrollablitiy.
+  - As a bonus, i leraned a bit more about `content` property and `attr` property function.
+  - I learned what should be taken into account while formatting text:
+    - Number of characters per line (optimal 45-90, best - 65).
+    - Font-size.
+    - Line-height.
 - **What surprised**
-  text placeholder
+  - There are hardware/physical pixels and device independent pixels (DIP)/virtual pixels (points used as coordinates for css). Each virtual pixel has corresponding amount of hardware pixels.  *Viewport width* is number of virtual pixels, not the physical ones.
+  ![vw-vs-physical-pixels](https://www.webra-digital.com/wp-content/uploads/2020/02/responsive-img-pixel-ratio-example.png)
+    > pixel isn't always a pixel
+  - *device pixel ratio (DPR)* = (number of hardware pixels per 1 DIP)/2. If there is 4 hardware pixels per 1 DPI, *DPR* is 2.
+    | name | definition |
+    | --- | --- |
+    | DIP (device independent pixels) | virtual pixels consisting of physical pixels |
+    | DPR (device pixel ratio) | number of physical pixels in 1 DPI |
+    | resolution | number of physical pixels on screen (width x height) |
+    | viewport width/height | number of DIPs on screen/its part |
+  - Setting the viewport turns on default browser ability to render on small screens! If viewport width undefined, browser assumes that user works on big screen and renders content on mobile screen as if it was laptop screen. If we define viewport width, browser is able to understand that it is small screen and can somehow handle adaptivity. To define veiwport width we specify resolution width and DPR (using this values browser calculates viewport width - number of virtual points it can render content to). Anyway, you shouldn't count on viewport width for your content to render well. For example, browser can't handle 1000px width image on too small viewport. So it is better to use relative units.
+  - I also noticed that in chrome dev tools based on the place of html document click different menu appeears. For example, click exactly on specific attribute provides extra option `edit attribute`, click exactly on text - `edit text`. It simplifies process of manipulations with html.
+  - I was surprised to discover one more use case for custom html attributes. I already used custom data attributes as placeholders for data which can be used from js code but now i will be able to use this data from css. Awesome!
+    ![content-prop-with-attr-function](./markdown-styling/content-attr.png) 
 - **What will be used in practice**
-  text placeholder
+  - Viewport defining.
+  - Rule for evaluating the quality of responsive design:
+    > users will get full experience no matter what device they're using.
+  - Principle of design from smallest to largest screen.
+  - Described way of defining breakpoints.
+  - All listed layout patterns and tools to its implemetation.
+  - All listed responsive image approaches.
+  - `Edit text` instead of `Edit HTML` (and so on) while working on html in devtools.
 - **General overview**
-  text placeholder
+  I tried to work with responsible layout before and did it intuitively, without pre-learning of corresponding materials. I was surprised to find reflection of my unshaped thoughts in well known approaches. Anyway, my knowledge of responsive design where blurred so this course was absolutely necessary for me. Summing up, reflective design is about providing the same content and user experience for all devices, even if design/layout pattern is different for different device groups. Responsive layout design can be done using patterns: *Column Drop*, *Mostly Fluid*, *Layout Shiffer*, *Off Canvas* and more. This patterns can be applied using tools: *grid*, *flexbox*, *media queries*.
 
 #### 5.2 [text placeholder](link)
 
@@ -466,6 +530,36 @@ I already finished this step in [Git and GitHub](#1-git-and-github) section, rev
 ***
 
 ### 6. HTML & CSS Practice
+
+***
+
+#### 6.1 [text placeholder](link)
+
+[![screenshot-image-link](./markdown-styling/screenshot-image-link.png)](./)
+
+- **What was new**
+  text placeholder
+- **What surprised**
+  text placeholder
+- **What will be used in practice**
+  text placeholder
+- **General overview**
+  text placeholder
+
+#### 6.2 [text placeholder](link)
+
+[![screenshot-image-link](./markdown-styling/screenshot-image-link.png)](./)
+
+- **What was new**
+  text placeholder
+- **What surprised**
+  text placeholder
+- **What will be used in practice**
+  text placeholder
+- **General overview**
+  text placeholder
+
+***
 
 ### 7. JavaScript Basics
 
