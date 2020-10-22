@@ -18,7 +18,7 @@
  2. **FRONT-END BASICS**
   
     - [x] [Intro to HTML & CSS](#4-intro-to-html-css)
-    - [ ] [Responsive Web Design](#5-responsive-web-design)
+    - [x] [Responsive Web Design](#5-responsive-web-design)
     - [ ] [HTML & CSS Practice](#6-html-css-practice)
     - [ ] [JavaScript Basics](#7-javascript-basics)
     - [ ] [Document Object Model - practice](#8-document-object-model-practice)
@@ -514,18 +514,26 @@ I already finished this step in [Git and GitHub](#1-git-and-github) section, rev
 - **General overview**
   I tried to work with responsible layout before and did it intuitively, without pre-learning of corresponding materials. I was surprised to find reflection of my unshaped thoughts in well known approaches. Anyway, my knowledge of responsive design where blurred so this course was absolutely necessary for me. Summing up, reflective design is about providing the same content and user experience for all devices, even if design/layout pattern is different for different device groups. Responsive layout design can be done using patterns: *Column Drop*, *Mostly Fluid*, *Layout Shiffer*, *Off Canvas* and more. This patterns can be applied using tools: *grid*, *flexbox*, *media queries*.
 
-#### 5.2 [text placeholder](link)
+#### 5.2 Game [Flexbox Froggy](http://flexboxfroggy.com/)
 
-[![screenshot-image-link](./markdown-styling/screenshot-image-link.png)](./)
+[![screenshot-image-link](./markdown-styling/screenshot-image-link.png)](./task_responsive_web_design/froggy.png)
 
 - **What was new**
-  text placeholder
+  - When we set `flex-direction` to a reversed row or column, start and end are also reversed.
+  - `flex-wrap: wrap-reverse` value.
+  - Difference between:
+    - `align-items` alignes (on cross-axis) items within their grid tracks.
+    - `align-content` alignes (on cross-axis) grid tracks (as single unit of content) within flex container.
+    - `justify-items` alignes (on main axis) items within their grid tracks.
+    - `justify-content` alignes (on main axis) grid tracks (as single unit of content) within flex container.
+    > When we have only 1 grid track on asis, `align-content` and `align-items` will have the same result (because grid track tretches to the entire container and therefore equals to it).
 - **What surprised**
-  text placeholder
+  - Ability to use `justify-self`,  `align-self` and `order` property for multiple elements at the same time.
 - **What will be used in practice**
-  text placeholder
+  - `justify-content`, `align-items`, `align-content`, `justify-self`, `align-self`, `flex-direction`,`flex-wrap`, `flex flow`, `order` flexbox properties.
 - **General overview**
-  text placeholder
+  This game clarified for me the main concept which i tend not to think about when i use flexbox - outcome of some flexbox manipulations based on the axis and its direction. It is necessary to look on flexbox properties from the point of view of the main and cross axis with specific direction. There is no static coordinate system, in which the main axis is always horizontal and directed to the right. For example, property `justify content: flex-start` alignes items on the start of the main axis. Start of main axis defined by property `flex-flow`. So we should always keep in head with which axis we are working.   In flexbox there is no left/right/top-bottom side, there is only flex end and flex start.
+  ![flex-direction](https://www.ostraining.com/cdn/images/blog/web-design/css-flexbox/03/01.png)
 
 ***
 
