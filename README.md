@@ -439,7 +439,7 @@ I already finished this step in [Git and GitHub](#1-git-and-github) section, rev
 
 #### 5.1 Course [Responsive Web Design Fundamentals](https://www.udacity.com/course/responsive-web-design-fundamentals--ud893)
 
-[![screenshot-image-link](./markdown-styling/screenshot-image-link.png)](./)
+[![screenshot-image-link](./markdown-styling/screenshot-image-link.png)](./task_responsive_web_design/responsive-web-design-fundamentals.png)
 
 - **What was new**
   - I discovered remote debugging.
