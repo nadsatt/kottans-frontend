@@ -541,31 +541,22 @@ I already finished this step in [Git and GitHub](#1-git-and-github) section, rev
 
 ***
 
-#### 6.1 [text placeholder](link)
+#### 6.1 [HTML & CSS practice: Hooli-style Popup](https://github.com/kottans/frontend/blob/master/tasks/html-css-popup.md)
 
-[![screenshot-image-link](./markdown-styling/screenshot-image-link.png)](./)
-
-- **What was new**
-  text placeholder
-- **What surprised**
-  text placeholder
-- **What will be used in practice**
-  text placeholder
-- **General overview**
-  text placeholder
-
-#### 6.2 [text placeholder](link)
-
-[![screenshot-image-link](./markdown-styling/screenshot-image-link.png)](./)
+[![screenshot-image-link](./markdown-styling/demo-image-link.png)]()
+[![screenshot-image-link](./markdown-styling/code-image-link.png)]()
 
 - **What was new**
-  text placeholder
+  - I learned about the focusable elements and the `:focus` pseudoclass.
+  - I learned about the checkable elements and the `:checked` pseudoclass.
+  - I tried html/css validation in [The W3C Markup Validation Service](https://validator.w3.org/), [CSS Validation Service](https://jigsaw.w3.org/css-validator/).
 - **What surprised**
-  text placeholder
+  I knew that input field focusing follows corresponding label clicking, but i didn't have picture in my had. Now i see that label clicking triggers styling of input field as if we defined `input:focus` selector.
 - **What will be used in practice**
-  text placeholder
+  - Listed pseudo-classes and pseudo-classes at all.
+  - `+` and `~` selectors.
 - **General overview**
-  text placeholder
+  This task was pretty challenging for me because i didn't use `:focus` and `:checked` states before. So i needed some time to grasp its behavior and purpose. Pseudo-classes i got acquainted with can be handy in lots of situations and i will spend some time to investigate more of them. I trained in combinator selectors usage a lot and understood aim of `+` and `~` selectors (thanks to way of learning: feel problem -> get already invented high-level solution). I also practiced in work with 'local -> origin -> upstream -> local' repository chain and creating pull requests.
 
 ***
 
