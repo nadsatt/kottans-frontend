@@ -562,6 +562,61 @@ I already finished this step in [Git and GitHub](#1-git-and-github) section, rev
 
 ### 7. JavaScript Basics
 
+***
+
+#### 7.1 Course [Intro to JS](https://www.udacity.com/course/intro-to-javascript--ud803)
+
+[![screenshot-image-link](./markdown-styling/screenshot-image-link.png)](./task_js_basics/intro-js.png)
+
+- **What was new**
+  - Chrome devtools shortcats to hide (`h`) elements; toggle elements editing (`f2`); toggle editing attrimutes (`↵` for first, `Tab` for next, `Shift` + `Tab` for previous; slightly/greatly increase/decrease css values (`cmnd` + arrows, `alt` + arrows); clear console (`cmnd` + `K`); rendo changes (`cmnd` + `shift` + `Z`). Got acquainted with shortcut groups for different devtools panels.
+  - I learned how to kill process in Chrome.
+  - I learned what *inline function* means. 
+    > An inline function is a javascript function, which is assigned to a variable created at runtime. Inline func can be named or anonymous, the main condition - there is at least one variable (created in runtime) which links to the function.
+
+    Anonymous func can be both inline and non-inline. Inline func can be both named and anonymous.
+
+    I decided to create scheme of all js func types.
+    ![func-types](./markdown-styling/func-types.png)
+- **What surprised**
+  - Fact that arg names defined in function declaration called *function parameters* while arg values passed to the executed function called *function arguments*. Parameters are variables that are used to store the data that's passed into a function. Arguments are the actual data that's passed into a function when it is invoked. I used to call both of them as arguments before.
+  - Fact that function expressions are actually functions without name/anonymous functions stored in variables. I thought that function expression's name its name of the variable it is stored in. It is important to differentiate single & static *FUNCTION NAME* vs dynamic and multiple *NAME OF VARIABLE FUNC STORED IN*.
+    ![named-vs-anon-func](./markdown-styling/named-vs-anon-func.png)
+- **What will be used in practice**
+  - Devtools shortcuts.
+- **General overview**
+  This course represents very basic info so passing it was as relaxable as watching cats on YouTube. But i learned how to get an advantage the "falling-through" behavior of switch statements (f.e. when we want to get accumulated value). I also repeated and formed for myself the hoisting rule - being hoisted only function declarations (hoisted as declared & defined) and var variables (hoisted as declared). Well, behind all this is work witn inner `LexicalEnvironment` and `VariableEnvironment` objects, but it's ok to think about hoisting on the top level.
+  
+#### 7.2 Course []()
+
+[![screenshot-image-link](./markdown-styling/demo-image-link.png)]()
+[![screenshot-image-link](./markdown-styling/code-image-link.png)]()
+
+- **What was new**
+  text placeholder
+- **What surprised**
+  text placeholder
+- **What will be used in practice**
+  text placeholder
+- **General overview**
+  text placeholder
+
+#### 7.3 Course []()
+
+[![screenshot-image-link](./markdown-styling/demo-image-link.png)]()
+[![screenshot-image-link](./markdown-styling/code-image-link.png)]()
+
+- **What was new**
+  text placeholder
+- **What surprised**
+  text placeholder
+- **What will be used in practice**
+  text placeholder
+- **General overview**
+  text placeholder
+
+***
+
 ### 8. Document Object Model - practice
 
 ![cat-picture-top](./markdown-styling/cat-picture-top.png)
