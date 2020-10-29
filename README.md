@@ -571,7 +571,7 @@ I already finished this step in [Git and GitHub](#1-git-and-github) section, rev
 - **What was new**
   - Chrome devtools shortcats to hide (`h`) elements; toggle elements editing (`f2`); toggle editing attrimutes (`↵` for first, `Tab` for next, `Shift` + `Tab` for previous; slightly/greatly increase/decrease css values (`cmnd` + arrows, `alt` + arrows); clear console (`cmnd` + `K`); rendo changes (`cmnd` + `shift` + `Z`). Got acquainted with shortcut groups for different devtools panels.
   - I learned how to kill process in Chrome.
-  - I learned what *inline function* means. 
+  - I learned what *inline function* means.
     > An inline function is a javascript function, which is assigned to a variable created at runtime. Inline func can be named or anonymous, the main condition - there is at least one variable (created in runtime) which links to the function.
 
     Anonymous func can be both inline and non-inline. Inline func can be both named and anonymous.
@@ -587,24 +587,68 @@ I already finished this step in [Git and GitHub](#1-git-and-github) section, rev
 - **General overview**
   This course represents very basic info so passing it was as relaxable as watching cats on YouTube. But i learned how to get an advantage the "falling-through" behavior of switch statements (f.e. when we want to get accumulated value). I also repeated and formed for myself the hoisting rule - being hoisted only function declarations (hoisted as declared & defined) and var variables (hoisted as declared). Well, behind all this is work witn inner `LexicalEnvironment` and `VariableEnvironment` objects, but it's ok to think about hoisting on the top level.
   
-#### 7.2 Course []()
+#### 7.2 Exercises [Free Code Camp](https://www.freecodecamp.org/learn)
 
-[![screenshot-image-link](./markdown-styling/demo-image-link.png)]()
-[![screenshot-image-link](./markdown-styling/code-image-link.png)]()
+[![screenshot-image-link](./markdown-styling/screenshot-image-link.png)](./task_js_basics/js-exercises.png)
 
 - **What was new**
-  text placeholder
-- **What surprised**
-  text placeholder
-- **What will be used in practice**
-  text placeholder
-- **General overview**
-  text placeholder
+  - I discovered one more difference between let and var - declaration overwriting. Let variable can be declared only once. Var variable can be declared twice and no error will be thrown even in strict mode.
+  - I discovered new approach for array slicing using arr desctructuring with rest parameters - `[, , ...slicedArr] = sourceArr`.
+  - I learned that new line in template literal creates new line in output string.
+  - I learned what functional programming is about:
+    - *No dependence between funcs and global state/global variables* - funcs don't rely on and don't change global scope variables. For example, if func needs global var, it takes it as input parameter, not directly from global scope (this approach works for value types but requires attention for reference types).
+    - *Pure funcs* - same output for same input. Its output depends solely on its inputs.
+    - *Funcs with limited side effects* - controll how func affects global program state. For example, in case of passing to function reference value type NOT TO USE METHODS WHICH MODIFY ORIGINAL OBJECT in func body. So while writing function it's especially important to take into consideration 2 things:
+      - is parameter a value or reference type?
+      - do functions/methods which work with that parameter within this function modify original object?
 
-#### 7.3 Course []()
+    **All object changes made within function can leak out only with *return* statement.**
+  
+    > One of the core principles of functional programming is to not change things. Changes lead to bugs. It's easier to prevent bugs knowing that your functions don't change anything, including the function arguments or any global variable.
+
+    > In functional programming, changing or altering things is called *MUTATION*, and the outcome is called a *SIDE EFFECT*. A function, ideally, should be a pure function, meaning that it does not cause any side effects.
+
+    > Functional programming is all about creating and using non-mutating functions.
+
+  - I learned about *first-class functions*:
+    > function which can be used like any other object. They can be saved in variables, stored in an object, or passed as function arguments.
+
+    > function which can be assigned to a variable, passed into another function, or returned from another function just like any other normal value. All js functions are *first-class functions*.
+  - I learned about *higher order functions*:
+    > function which takes as arg/returns function.
+  - I learned about *lambda functions*:
+    > function passed in to another function as arg or returned from another function.
+  - I learned about *function arity*:
+    > number of arguments function requires. Currying a function means to convert a function of N arity into N functions of arity 1.
+  - I learned how to use regex in code editor.
+- **What surprised**
+  - Ability to declare variables without keyword in non-strict mode.
+  - Fact that functional programming uses imperative coding style.
+  - Easy way to create array clone using slice `clone = arr.slice()`.
+  - Statement that 'almost any array processing problem can be solved using the reduce method' and 'map and filter are special cases of reduce'.
+- **What will be used in practice**
+  - All basic staff i repeated.
+  - Functional programming concepts.
+  - Rexeg.
+- **General overview**
+  This set of exercices was a nice way to recheck myself and understand how my picture of how js behaves matches with the real one. I also was very happy to train myself in solving tasks and found out that now it's not that hard for me to solve tasks in one-line-code manner. The same can be sayed about recursion usage. Section dedicated to functional programming was expecially useful. I didn't use it before and i learned by practice its core concepts:
+    1. *Use clones*. Don't change existing variable or object - create new variables and objects and return them if need be from a function.
+    2. *Pass as arguments*. Declare function arguments - any computation inside a function depends only on the arguments, and not on any global object or variable.
+
+  To summarize i created the following scheme. (i am fond of creating visual schemes :heart_eyes:).
+  ![functional-programming-concepts](./markdown-styling/functional-programming-concepts.png)
+  As a plus, while investigating desctructuring use cases i created the following scheme which reflects how powerfull is this feature.
+  ![destructuring-cases](./markdown-styling/desctructuring-cases.png)
+
+***
+
+### 8. Document Object Model - practice
+
+***
+
+#### 8.1 Course []()
 
 [![screenshot-image-link](./markdown-styling/demo-image-link.png)]()
-[![screenshot-image-link](./markdown-styling/code-image-link.png)]()
 
 - **What was new**
   text placeholder
@@ -616,8 +660,6 @@ I already finished this step in [Git and GitHub](#1-git-and-github) section, rev
   text placeholder
 
 ***
-
-### 8. Document Object Model - practice
 
 ![cat-picture-top](./markdown-styling/cat-picture-top.png)
 
