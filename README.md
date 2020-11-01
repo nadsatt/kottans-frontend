@@ -543,8 +543,8 @@ I already finished this step in [Git and GitHub](#1-git-and-github) section, rev
 
 #### 6.1 [HTML & CSS practice: Hooli-style Popup](https://github.com/kottans/frontend/blob/master/tasks/html-css-popup.md)
 
-[![screenshot-image-link](./markdown-styling/demo-image-link.png)]()
-[![screenshot-image-link](./markdown-styling/code-image-link.png)]()
+[![screenshot-image-link](./markdown-styling/demo-image-link.png)](https://nadsatt.github.io/kottans-homeworks/html-css-popup/)
+[![screenshot-image-link](./markdown-styling/code-image-link.png)](https://github.com/nadsatt/kottans-homeworks/tree/master/html-css-popup)
 
 - **What was new**
   - I learned about the focusable elements and the `:focus` pseudoclass.
