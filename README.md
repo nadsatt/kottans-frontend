@@ -646,18 +646,65 @@ I already finished this step in [Git and GitHub](#1-git-and-github) section, rev
 
 ***
 
-#### 8.1 Course []()
+#### 8.1 Course [JavaScript and the DOM](https://classroom.udacity.com/courses/ud117)
 
-[![screenshot-image-link](./markdown-styling/demo-image-link.png)]()
+[![screenshot-image-link](./markdown-styling/screenshot-image-link.png)](./task_js_dom/js-and-the-dom.png)
 
 - **What was new**
-  text placeholder
+  - I learned difference between `textContent` and `innerText` properties:
+    - `textContent` prop returns original version of content, while `innerText` - rendered one (considers css styles).
+    - `textContent` gets the content of all elements, including `<script>` and `<style>` elements while `innerText` only shows content of “human-readable” elements.
+
+    `textContent` will return all of the text no matter what, `innerText` will return only visible and human-relevant text. It seems logical given the fact that `innerText` prop belongs to `HTMLElement` interface which represents html-element-specific stuff and `textContent` prop belongs to `Node` interface which represents node-specific stuff.
+    ![text-content-vs-inner-text](./markdown-styling/text-content-vs-inner-text.png)
+  - I learned `monitorEvents` and `UnmonitorEvents` (Chrome-specific) functions. Nice way to see by your own numerous events occurring while you make basic actions.
+  - I learned about event phases:
+    (`target element` - innermost element on which event occured)
+    1. `capturing` - while engine tries to reach target element by moving from outermost to innermost element placed where event occured. If any of those elements listens to this event and has `capturing:true` mode (default), its listener function is invoked.
+    2. `at target` - when engine reaches target element.
+    3. `bubbling` - while engine tries to reach outermost element by moving from target element to outermost element where event occured. If any of those elements listens to this event and has `bubbling:true` mode, its listener function is invoked.
+
+    Engine first finds event target (innermost element which listens to this event), executes target listener and only then executes outer elements listeners.
+    ![event-phases](https://miro.medium.com/max/3712/1*-J3yN_X5IWOqhjQ6LnqYwQ.jpeg)
+  - I learned about event handling strategies:
+    - *from inner to outer* (default) - invoke events from target to outermost. Listeners invoked in bubbling stage.
+    - *from outer to inner (with 3rd arg true)* - invoke events from outermost to target. Listeners invoked in capturing stage.
+  
+    ![event-phases](./markdown-styling/event-phases.png)
+  - I learned about *notification* - Event object which listener function receives  when an event of the specified type occurs.
+  - I learned that we can use `preventDefault` method on event obj(notification) to prevent default event handling. For example. default event handling for clicking `<a>` tag is routing to defined link.
+  - I learned about *event delegation* approach - process of delegating to a parent element the ability to manage events for child elements.
+  - I learned one more way to provide DOM availability on the moment of stript execution with saving ability to place script in the head - `DOMContentLoaded` event (i used only placement of script at the bottom and `defer` attr before). I also learned how to investigate this event in `Network` devtools tab. This approach not that used because code has to be wrapped in listener. So it is better to use it only for code which has to be executed as soon as possible. This way it will run as early as possible, but not too early that the DOM isn't ready for it.
+  - I learned about `load` event which fires later than DOMContentLoaded, when everything referenced by the HTML have been loaded.
+  - I learned about `perfomance.now()` method which reflects number of microseconds after page loaded. We use differnce between initial `perfomance.now()` and `perfomance.now()` calculated after code execution. I learned how to test code performance with thic method.
+  - I learned what `DocumentFragment` element used for! Its sort of lightweight version of DOM which can be nested into DOM. Changes made on this element don't affect DOM. So its used as a container, which changes don't trigger DOM reflow and repainting.
+    > `Document Fragment` represents a minimal document object that has no parent. It is used as a lightweight version of Document that stores a segment of a document structure comprised of nodes just like a standard document.
+  
+    Creating `DocumentFragment` it's like creating inner DOM tree in existing DOM. Changes of inner DOM won't affect outer DOM recalculation (reflow and repaint).
+  - I learned about `reflow` and `repaint`. 
+    > For example, after adding a single CSS class to an element, the browser often recalculates the layout of the entire page — that's one reflow and one repaint!
 - **What surprised**
-  text placeholder
+  - Info that due to support issues earlier developers had to write different code to perform the same action in different browsers. Handling this was one of the main purposes of jQuery. You write abstract, jQuery-specific methods, jQuery converts it to compatible for different browser methods. Now browsers try to support standarts so jQuery is not that used. I was surprised to know that jQuery triggered development of new DOM methods.
+  - Info that event callbacks are called *listeners*(listener function) and defining callback called *listener registration*.
+  - Ability to see/temporary remove registered event of selected element and its ancestors in `Event` tab.
+  - I learned how to replace 1 big block of code which executed synchronously with n small blocks of code which executed asynchronously (by using `SetTimeout` with zero delay). Why it is important? Because when sync block of code too big, it will occupy the stack for too long and it will be noticeable for user. For example, when `for loop` starts to run, all other commands won't be able to run on stack and if cycle runs long time page inaccessibility will be noticeable. If the cycle runs for 5 seconds, the user won't be able to interact with the page in any way for 5 seconds.
 - **What will be used in practice**
-  text placeholder
+  - Methods to select/modify/delete DOM elements.
+  - Event objects, event phases, event delegation and `Events` tab in devtools.
+  - Code performance testing and optimization.
 - **General overview**
-  text placeholder
+  I repeated html processing chain:
+  > bytes (parsed) -> characters -> tags (tokenized) -> tokens (DOCTYPE, start tag, end tag, comment, character, end-of-file) -> nodes -> DOM.
+  
+  I repeated key points about DOM construction process. DOM is constructed incrementally, as the HTML is parsed. DOM construction work in parallel so instead of 1 final point where DOM constructed there is a set of points where specific parts constructed. Nodes constructed as their source code processed and their source code starts to be processed as it arrives from the server. So the earlier html tag placed in html document -> the earlier it will be placed in byte code -> the earlier it will be sent from the server (byte code send by chunks) -> the earlier it's object representation will be constructed on the client side. DOM constructed element by element. On the code level it's visible, on human-perception level it's not. It's important to ensure that script element's content will be executed after it's target element's construction. I repeated class and instance concepts. I also repeated chain of interfaces related to DOM elements, their properties and methods. I repeated methods used to select, modify and style DOM tree. I repeated basic core events stuff and learned a bit of new ones (event phases and delegation). I repeated how js engine works - stack, web api, event loop, micro task quenue, (macro) task quenue. I realized that while making any changes which can affect the DOM it is important to think
+  > how many recalculations it will trigger?
+
+  and always try to minimize number of recalculations (its consly processes).
+  Finally i summed up 3 ways for code optimization:
+  - Controll number of browser's reflows and repaints.
+  - Measure code execution time.
+  - Split big chunks of sync code into small portions of async code (for smoothing
+switching between sync and async executed code chunks).
 
 ***
 
