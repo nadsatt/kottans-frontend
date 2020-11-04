@@ -706,6 +706,10 @@ I already finished this step in [Git and GitHub](#1-git-and-github) section, rev
   - Split big chunks of sync code into small portions of async code (for smoothing
 switching between sync and async executed code chunks).
 
+#### 8.2 Exercises [Free Code Camp](https://www.freecodecamp.org/learn)
+
+[![screenshot-image-link](./markdown-styling/screenshot-image-link.png)](./task_js_dom/intermediate-algoritm-scripting.png)
+
 ***
 
 ![cat-picture-top](./markdown-styling/cat-picture-top.png)
