@@ -742,16 +742,57 @@ switching between sync and async executed code chunks).
 
 ![cat-picture-bottom](./markdown-styling/cat-picture-bottom.png)
 
+***
+
 ### 9. Building a Tiny JS World (pre-OOP) - practice
+
+***
+
+#### 9.1 [Practical task](https://github.com/kottans/frontend/blob/master/tasks/js-pre-oop.md)
+
+[![screenshot-image-link](./markdown-styling/demo-image-link.png)](https://nadsatt.github.io/kottans-homeworks/tiny-js-world)
+[![screenshot-image-link](./markdown-styling/code-image-link.png)](https://github.com/nadsatt/kottans-homeworks/tree/master/tiny-js-world)
+
+- **General overview**:
+  It was a nice task to repeat how es6 classes are constructed and extended. Thanks to review i memorized next comments:
+  > The whole point of class hierarchy is that super classes contain and operate properties that are common for all child classes, and child classes introduce and operate properties unique to them.
+
+  > The beauty of OOP approach is that, in particular, each class has what it it needs only, **inheriting shared properties** from a super class (or a chain of super classes) and **introducing what is unique** to a given class.
+
+***
 
 ### 10. Object oriented JS - practice
 
+***
+
+***
+
 ### 11. OOP exercise - practice
+
+***
+
+***
 
 ### 12. Offline Web Applications
 
+***
+
+***
+
 ### 13. Memory pair game — real project
+
+***
+
+***
 
 ### 14. Website Performance Optimization
 
+***
+
+***
+
 ### 15. Friends App - real project
+
+***
+
+***
