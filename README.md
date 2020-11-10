@@ -21,11 +21,11 @@
     - [x] [Responsive Web Design](#5-responsive-web-design)
     - [x] [HTML & CSS Practice](#6-html--css-practice)
     - [x] [JavaScript Basics](#7-javascript-basics)
-    - [ ] [Document Object Model - practice](#8-document-object-model-practice)
+    - [x] [Document Object Model - practice](#8-document-object-model---practice)
   
  3. **ADVANCED TOPICS**
 
-    - [ ] [Building a Tiny JS World (pre-OOP) - practice](#9-building-a-tiny-js-world-pre-oop-practice)
+    - [x] [Building a Tiny JS World (pre-OOP) - practice](#9-building-a-tiny-js-world-pre-oop---practice)
     - [ ] [Object oriented JS - practice](#10-object-oriented-js-practice)
     - [ ] [OOP exercise - practice](#11-oop-exercise-practice)
     - [ ] [Offline Web Applications](#12-offline-web-applications)
