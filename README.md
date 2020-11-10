@@ -710,6 +710,30 @@ switching between sync and async executed code chunks).
 
 [![screenshot-image-link](./markdown-styling/screenshot-image-link.png)](./task_js_dom/intermediate-algoritm-scripting.png)
 
+#### 8.3 [Practical task](https://github.com/kottans/frontend/blob/master/tasks/js-dom.md#then)
+
+[![screenshot-image-link](./markdown-styling/demo-image-link.png)](https://nadsatt.github.io/kottans-homeworks/dom-api/)
+[![screenshot-image-link](./markdown-styling/code-image-link.png)](https://github.com/nadsatt/kottans-homeworks/tree/master/dom-api)
+
+- **General overview**
+  It was a great task to repeat previously learned DOM methods.
+  - I used `DOMContentLoaded` event for the first time (instead of `defer`).
+  - I realized when it's better to use event delegation (and how). I realized that i should always take care about semantic tags.
+  - I realized that relative DOM selectors (such as `nextSibling`, `firstElementChild`) shouldn't be used in production because it makes app non-flexible and fragile and worsens code readability.
+  - I realized that any bit of code (even the smallest one) which in one or another way is being duplicated across the app should be removed (DRY).
+  - I realized that any values which used in code should be assigned to variables:
+
+    *nope*: ~~for (let i = 0; i < 10; i++)~~
+    *yes*:
+
+    ```let start = 0;
+       let end = 10;
+       for(start, start < end; start++)
+    ```
+
+  - I realized that size of images used in app matters **a lot**.
+  - It is suprpised me that `DocumentFragment` instance *spoils* when used. More precisely, it is emptied. If fragment contains div and we insert div from fragment in DOM, div removed from fragment.
+
 ***
 
 ![cat-picture-top](./markdown-styling/cat-picture-top.png)
