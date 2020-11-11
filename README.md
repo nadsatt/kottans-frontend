@@ -765,6 +765,58 @@ switching between sync and async executed code chunks).
 
 ***
 
+#### 10.1 Course [Object Oriented JS](https://classroom.udacity.com/courses/ud015)
+
+[![screenshot-image-link](./markdown-styling/screenshot-image-link.png)](./task_js_oop/object-oriented-js.png)
+
+- **What was new**:
+  - I found for myself one more way to describe closure. I used this one before:
+    > замыкание - *свойство js функций* (за исключением созданных через конструктор) ссылаться в качестве внешнего окружения на то, в котором они были созданы.
+
+    This definition describes rather what are the aim of closures:
+    > замыкание - *способ сохранить контекст выполнения функции после снятия его со стека* путем возвращения из функции другой функции, которая содержит ссылку на снятый со стека контекст тем самым оставляя его достижимым.
+
+    I also liked this definition:
+    > an execution context of the function will always be created as a child of the context it was defined within.
+  - I learned patterns for objects creation:
+    - *Object decorator* - manual obj creation & returning, defining duplicated methods (each obj has it's own method).
+    - *Functional shared* - manual obj creation & returning, copying link to shared method (each obj has link to shared method).
+    - *Prototypal* - manual obj creation & returning, manual prototype assignment (each obj has link to shared method in its `__proto__)`).
+    - *Pseudo-classical* - calling func in `constructor mode` which makes creation, prototype assignment and obj return for us (each obj has link to shared method in its `__proto__)`).
+  - Name `constructor mode` which defines mode of running function called with the `new` keyword. Function which runs in `constructor mode`: runs constructor, creates object and assignes `func.prototype` as its `__proto__`, returns object.
+    > `constructor mode` makes your function run as if there was some hidden lines at the beginning and at the end of the function code.
+  - I learned how to write subclasses with *object decorator* and *pseudo-classical* pattern. I liked this statement:
+    > sublass uses supreslass' output as its starting point.
+- **What surprised**:
+  - One more interesting fact about variables declared without keyword. I already learned that it's possible to declare a vaiable without keyword (in non-strict mode only), but now i also learned that in that case variable will be added to the global object (no matter where it was declared).
+  - Statement that *this* value binding is pretty much the same as *function parameter* value binding. Both defined when function invoked, just in different places: *parameters* - on the right, in in bracket; *this* - on the left, before method name.
+    > *this* is like a function input, just assigned on the left.
+
+    And methods like `func.call(this, arg1, arg2)` just overrides *this* value by redefining it on the right side.
+  - I understood how `instanceof` works. If we write `a instanceof B`, engine checks if `B` is available somewhere in prototype chain of instance `a` (by checking value of each prototype's `constructor` property).
+- **What will be used in practice**:
+  - To see how engine looks for variables we can imagine our code as a set of nested boxes (according to code structure!). Each box represents lexical environment of corresponding block/function/script and contains variables declared in this block/function/script. We start from the current box and move to the outer boxes with checking if they contain the variable we're looking for.
+  ![context-scope-environment](./markdown-styling/context-scope-env.png)
+  - To see how different execution contexts of the same function we can imagine boxes. Different context of the outer function represent different boxes. Boxes which represent execution context of the inner function created withing boxes which represent execution context of the outer function they were created within. Visualization provided by the cource is awesome!
+  ![shared-outer-contexts](./markdown-styling/shared-outer-contexts.png).
+  - Whenewer you see similiarities in your code, factor out the similiar apsects of it and place it into reusable part of code.
+  - Listend patterns for objects and prototypes chain creation.
+- **General overview**:
+  I finally convinced that what i learned earlier about scopes matches with the the real picture. (it was time when i thought that lexical environment and scope are different names for the same entity). Now i can conduct that:
+  - *lexical environment* refers to inner js object created as a part of execution context of function/script. Lexical environment created for each *BLOCK* of code (script, func, loops, conditions etc) and before this code block' execution. Of course lexical environments can be nested if corresponding code is nested (in object terms 'nesting' *lexical env of loop* in *lexical env of function* means that *lexical env of loop* refers to *lexical env of func* as on the outer lexical env).
+  - *scope* is an abstaction which refers to set of code blocks (script, func, loops, conditions etc) from which target variable is visible. I think we can even say that scope represents set of lexical environments from which target variable is accessible. That makes sense because:
+    - Each lexical environment stands as inner object containing variables and functions declared in coresponding code block (this is where engine can find variable).
+    - Each lexical environment has a link to its outer lexical environment (this is how engine can find variable - my moving outer).
+  For example, when we have global variable *A* and function *B*, variable *A* will be accessible both from lexical environment its declared and from lexical environment of function B (by moving from the lexical environment of function B to lexical environmnent of script). Scope in this case represented by 2 lexical environments from which variable *A* is accesible.
+
+  Despite a bit outdated info from course, i repeated that (from es6) scope can be *block* (for block of code), *local* (for function) and *global* (for script). I repeated how execution context is created and what it consists of:
+  - *Lexical environment* (stores and operates let variables and functions declared in standart way) and link to the outer one.
+  - *Variable evironment* (stores and operates var variables) and link to the outer one.
+  - *this* reference.
+  In case when script/function has nested code, nested variable and lexical environments added.
+  
+  I enchanced my knowledge about closures, this and different object patterns.
+
 ***
 
 ### 11. OOP exercise - practice
