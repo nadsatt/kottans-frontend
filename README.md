@@ -49,8 +49,6 @@
 
 [![screenshot-image-link](./markdown-styling/screenshot-image-link.png)](./task_git_intro/version-control-with-git.png)
 
-![alert-image](./markdown-styling/alert.png)
-
 During this course i:
 
 - Used just learned commands while trying to add 'after-commit' changes to the last commit of this review.
@@ -222,7 +220,7 @@ During this course i:
   - `kill <process-id>`, `kill -9 <process-id>` to kill processes.
 
 - **What surprised**
-  I was surprised that absolute path starts from `/`. I always used relative paths starting with `./` and used to think that `./` === `/`. By making some experements in terminal i understood that *absolute path* starts from  `/` and *relative path* starts from `./` or right from file/directory name. I also realized that each command has both input and output where input - set or arguments defined with command and output - content printed in terminal. 
+  I was surprised that absolute path starts from `/`. I always used relative paths starting with `./` and used to think that `./` === `/`. By making some experements in terminal i understood that *absolute path* starts from  `/` and *relative path* starts from `./` or right from file/directory name. I also realized that each command has both input and output where input - set or arguments defined with command and output - content printed in terminal.
 - **What will be used in practice**
   I will use most of the commands i acquainted with because it represents 20% of commands which can cover up to 80% of work to do in terminal.
 - **General overview**
@@ -501,7 +499,7 @@ I already finished this step in [Git and GitHub](#1-git-and-github) section, rev
   - Setting the viewport turns on default browser ability to render on small screens! If viewport width undefined, browser assumes that user works on big screen and renders content on mobile screen as if it was laptop screen. If we define viewport width, browser is able to understand that it is small screen and can somehow handle adaptivity. To define veiwport width we specify resolution width and DPR (using this values browser calculates viewport width - number of virtual points it can render content to). Anyway, you shouldn't count on viewport width for your content to render well. For example, browser can't handle 1000px width image on too small viewport. So it is better to use relative units.
   - I also noticed that in chrome dev tools based on the place of html document click different menu appeears. For example, click exactly on specific attribute provides extra option `edit attribute`, click exactly on text - `edit text`. It simplifies process of manipulations with html.
   - I was surprised to discover one more use case for custom html attributes. I already used custom data attributes as placeholders for data which can be used from js code but now i will be able to use this data from css. Awesome!
-    ![content-prop-with-attr-function](./markdown-styling/content-attr.png) 
+    ![content-prop-with-attr-function](./markdown-styling/content-attr.png)
 - **What will be used in practice**
   - Viewport defining.
   - Rule for evaluating the quality of responsive design:
@@ -681,7 +679,7 @@ I already finished this step in [Git and GitHub](#1-git-and-github) section, rev
     > `Document Fragment` represents a minimal document object that has no parent. It is used as a lightweight version of Document that stores a segment of a document structure comprised of nodes just like a standard document.
   
     Creating `DocumentFragment` it's like creating inner DOM tree in existing DOM. Changes of inner DOM won't affect outer DOM recalculation (reflow and repaint).
-  - I learned about `reflow` and `repaint`. 
+  - I learned about `reflow` and `repaint`.
     > For example, after adding a single CSS class to an element, the browser often recalculates the layout of the entire page — that's one reflow and one repaint!
 - **What surprised**
   - Info that due to support issues earlier developers had to write different code to perform the same action in different browsers. Handling this was one of the main purposes of jQuery. You write abstract, jQuery-specific methods, jQuery converts it to compatible for different browser methods. Now browsers try to support standarts so jQuery is not that used. I was surprised to know that jQuery triggered development of new DOM methods.
