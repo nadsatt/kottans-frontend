@@ -26,7 +26,7 @@
  3. **ADVANCED TOPICS**
 
     - [x] [Building a Tiny JS World (pre-OOP) - practice](#9-building-a-tiny-js-world-pre-oop---practice)
-    - [ ] [Object oriented JS - practice](#10-object-oriented-js-practice)
+    - [ ] [Object oriented JS - practice](#10-object-oriented-js---practice)
     - [ ] [OOP exercise - practice](#11-oop-exercise-practice)
     - [ ] [Offline Web Applications](#12-offline-web-applications)
     - [ ] [Memory pair game — real project!](#13-memory-pair-game-real-project)
@@ -746,7 +746,7 @@ switching between sync and async executed code chunks).
 
 ***
 
-#### 9.1 [Practical task](https://github.com/kottans/frontend/blob/master/tasks/js-pre-oop.md)
+#### 9.1 Project [Tiny-js-world](https://github.com/kottans/frontend/blob/master/tasks/js-pre-oop.md)
 
 [![screenshot-image-link](./markdown-styling/demo-image-link.png)](https://nadsatt.github.io/kottans-homeworks/tiny-js-world)
 [![screenshot-image-link](./markdown-styling/code-image-link.png)](https://github.com/nadsatt/kottans-homeworks/tree/master/tiny-js-world)
@@ -814,6 +814,29 @@ switching between sync and async executed code chunks).
   In case when script/function has nested code, nested variable and lexical environments added.
   
   I enchanced my knowledge about closures, this and different object patterns.
+
+#### 10.2 Exercises [codewars](https://www.codewars.com/)
+
+[![screenshot-image-link](./markdown-styling/screenshot-image-link.png)](./task_js_oop/codewars-js.png)
+
+- **General overview**
+  While solving exercises i repeated algorithms, regex and recursion. I also understood that using of sets is nice for performance.
+
+#### 10.3 Project [Frogger game](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true)
+
+[![screenshot-image-link](./markdown-styling/demo-image-link.png)](https://nadsatt.github.io/kottans-homeworks/frogger-game/)
+[![screenshot-image-link](./markdown-styling/code-image-link.png)](https://github.com/nadsatt/kottans-homeworks/tree/master/frogger-game)
+
+- **What was new**
+  - `requestAnimationFrame` wrapper to execute code as (macro)task, but *before* next render.
+- **What surprised**
+  - Fact that (macro)tasks are executed *1 per tick* (while microtasks are executed *all per tick*).
+  - Fact that `img` html elements need some time to load image defined in `src` attr. I thought like 'no network queries -> no assets loading'.
+- **What will be used in future**
+  - `requestAnimationFrame` wrapper.
+  - `load` event to ensure asset loading *before using* html element it's assigned to.
+- **General overview**
+  - It was a nice task to think about async code execution and how it's handled. I also realized that async code execution can be expected (when code triggers execution of async code - creating promise, setting timeout, sending http/db request) and unexpected (when user triggers (or not) execution of async code - creating click handler).
 
 ***
 
