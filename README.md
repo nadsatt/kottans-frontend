@@ -748,8 +748,8 @@ switching between sync and async executed code chunks).
 
 #### 9.1 Project Tiny-js-world [Pre-OOP](https://github.com/kottans/frontend/blob/master/tasks/js-pre-oop.md)
 
-[![screenshot-image-link](./markdown-styling/demo-image-link.png)](https://nadsatt.github.io/kottans-homeworks/tiny-js-world)
-[![screenshot-image-link](./markdown-styling/code-image-link.png)](https://github.com/nadsatt/kottans-homeworks/tree/master/tiny-js-world)
+[![screenshot-image-link](./markdown-styling/demo-image-link.png)](https://nadsatt.github.io/kottans-homeworks/pre-oop)
+[![screenshot-image-link](./markdown-styling/code-image-link.png)](https://github.com/nadsatt/kottans-homeworks/tree/master/pre-oop)
 
 - **General overview**:
   It was a nice task to repeat how es6 classes are constructed and extended. Thanks to review i memorized next comments:
