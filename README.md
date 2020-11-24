@@ -26,8 +26,8 @@
  3. **ADVANCED TOPICS**
 
     - [x] [Building a Tiny JS World (pre-OOP) - practice](#9-building-a-tiny-js-world-pre-oop---practice)
-    - [ ] [Object oriented JS - practice](#10-object-oriented-js---practice)
-    - [ ] [OOP exercise - practice](#11-oop-exercise-practice)
+    - [x] [Object oriented JS - practice](#10-object-oriented-js---practice)
+    - [x] [OOP exercise - practice](#11-oop-exercise---practice)
     - [ ] [Offline Web Applications](#12-offline-web-applications)
     - [ ] [Memory pair game — real project!](#13-memory-pair-game-real-project)
     - [ ] [Website Performance Optimization](#14-website-performance-optimization)
@@ -746,7 +746,7 @@ switching between sync and async executed code chunks).
 
 ***
 
-#### 9.1 Project [Tiny-js-world](https://github.com/kottans/frontend/blob/master/tasks/js-pre-oop.md)
+#### 9.1 Project Tiny-js-world [Pre-OOP](https://github.com/kottans/frontend/blob/master/tasks/js-pre-oop.md)
 
 [![screenshot-image-link](./markdown-styling/demo-image-link.png)](https://nadsatt.github.io/kottans-homeworks/tiny-js-world)
 [![screenshot-image-link](./markdown-styling/code-image-link.png)](https://github.com/nadsatt/kottans-homeworks/tree/master/tiny-js-world)
@@ -843,6 +843,28 @@ switching between sync and async executed code chunks).
 ### 11. OOP exercise - practice
 
 ***
+
+#### 11.1 Project Tiny-JS-world [Post-OOP](https://github.com/kottans/frontend/blob/master/tasks/js-post-oop.md)
+
+[![screenshot-image-link](./markdown-styling/demo-image-link.png)](https://nadsatt.github.io/kottans-homeworks/post-oop/)
+[![screenshot-image-link](./markdown-styling/code-image-link.png)](https://github.com/nadsatt/kottans-homeworks/tree/master/post-oop)
+
+- **What was new**
+  - Implementing inheritance using constructor functions.
+    | | Class | Constructor function |
+    |--|--|--|
+    | creating | `class B extends A` | `B.prototype = Object.create(A.prototype)` |
+    | calling base constructor | `super(...args)` | `A.call(this, ...args)` |
+  - I acquainted with OOP relationships types (Inhearitance, Aggregation, Assosiation, Composition).
+  - I used composition for different classes linking - by creating `FriendsManager` instance as property of `Inhabitant` instance.
+  - I learned about SOLID principles.
+  - I learned that any repeated bit of code should be converted to DRY code.
+- **What surprised**
+  - Fact that there is few other programming paradigms except Object-oriented and Functional.
+    ![programming-paradigms](https://4.bp.blogspot.com/-yhr2XknPmPk/XGafjGeT-7I/AAAAAAAAKwI/AWYNQ2YojN0V6B89dPWpfEQxRqCmRYGDQCLcBGAs/s1600/programming_paradigms-1024x532.png)
+    I also realized that each programming style has its own patterns.
+- **What will be used in future**
+  - SOLID and DRY principles to make my OOP code simple and scalable.
 
 ***
 
